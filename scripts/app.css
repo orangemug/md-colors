@@ -16,7 +16,7 @@ h1, h2, h3 {
 }
 
 header {
-  padding: 18px;
+  padding: 0.8em 1.6em;;
   background: black;
   color: white;
 }
@@ -55,18 +55,30 @@ header p {
 }
 
 .md-color {
-  padding: 12px;
+  position: relative;
+  overflow: hidden;
 }
 
 .md-color--title {
-  margin-bottom: 4px;
+  margin-bottom: 0.4em;
+}
+
+.md-color__anchor {
+  position: absolute;
+  top: -6em;
+}
+
+.md-color__anchor:target + .md-color {
+  border-left: solid 0.8em white;
 }
 
 .md-color__name {
-  margin-bottom: 48px;
+  margin: 0.8em;
+  margin-bottom: 3.2em;
 }
 
 .md-color__label {
+  margin: 0.8em;
   position: relative;
   overflow: hidden;
 }
@@ -80,7 +92,7 @@ header p {
 }
 
 .readme {
-  padding: 1em;
+  padding: 0.8em 1.6em;;
 }
 
 a {

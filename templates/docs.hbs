@@ -49,9 +49,10 @@
             </li>
           {{#each this}}
             <li class="md-color" style="background: {{this}}">
+              <a class="md-color__anchor" id="{{@../key}}-{{@key}}"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  {{@key}}
+                  <a href="#{{@../key}}-{{@key}}">{{@key}}</a>
                 </div>
                 <div class="md-color__label__value">
                   {{this}}
