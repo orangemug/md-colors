@@ -1,0 +1,95 @@
+.--constrain {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  margin: 0;
+  font-family: 'Fira Sans';
+}
+
+h1, h2, h3 {
+  font-family: 'Fira Sans';
+  font-weight: 500;
+  line-height: 1;
+}
+
+header {
+  padding: 18px;
+  background: black;
+  color: white;
+}
+
+header h1 {
+  margin-bottom: 0.1em;
+}
+
+header p {
+  margin-top: 0;
+}
+
+.color-palletes {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.6em;
+}
+
+.color-pallete {
+  flex: 1 0 340px;
+  padding: 0.6em;
+  border-bottom: solid 1px #ddd;
+}
+
+.color-pallete--empty {
+  padding-bottom: 0;
+  padding-top: 0;
+  border-bottom: none;
+  order: 999999;
+}
+
+.color-pallete ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.md-color {
+  padding: 12px;
+}
+
+.md-color--title {
+  margin-bottom: 4px;
+}
+
+.md-color__name {
+  margin-bottom: 48px;
+}
+
+.md-color__label {
+  position: relative;
+  overflow: hidden;
+}
+
+.md-color__label__name {
+  float: left;
+}
+
+.md-color__label__value {
+  float: right;
+}
+
+.readme {
+  padding: 1em;
+}
+
+a {
+  color: currentColor;
+}
+
+footer {
+  padding: 1em;
+  margin-top: 3em;
+  margin-bottom: 1.5em;
+  text-align: center;
+}
