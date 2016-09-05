@@ -16,8 +16,9 @@ Material design colors as an npm module
 ## Install
 To install
 
-    npm install orangemug/md-colors
-
+```sh
+npm install orangemug/md-colors
+```
 
 
 ## Usage
@@ -25,25 +26,31 @@ This module can be used in a variety of ways
 
 As a js module
 
-    var colors = require("md-colors");
-    colors("deep-orange", 500);
+```js
+var colors = require("md-colors");
+colors("deep-orange", 500);
+```
 
 As a sass module
 
-    @import "./node_modules/md-colors"
-    .button {
-      // Either
-      background: map-get($md-colors-lime, 500);
-      // Or
-      background: md-color("lime", 500);
-    }
+```scss
+@import "./node_modules/md-colors"
+.button {
+  // Either
+  background: map-get($md-colors-lime, 500);
+  // Or
+  background: md-color("lime", 500);
+}
+```
 
 As a less module
 
-    @import "./node_modules/md-colors"
-    .button {
-      background-color: extract($md-colors-lime, 500);
-    }
+```less
+@import "./node_modules/md-colors"
+.button {
+  background-color: extract($md-colors-lime, 500);
+}
+```
 
 
 ## License
