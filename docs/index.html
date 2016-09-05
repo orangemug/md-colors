@@ -25,7 +25,7 @@ h1, h2, h3 {
 }
 
 header {
-  padding: 18px;
+  padding: 0.8em 1.6em;;
   background: black;
   color: white;
 }
@@ -64,18 +64,30 @@ header p {
 }
 
 .md-color {
-  padding: 12px;
+  position: relative;
+  overflow: hidden;
 }
 
 .md-color--title {
-  margin-bottom: 4px;
+  margin-bottom: 0.4em;
+}
+
+.md-color__anchor {
+  position: absolute;
+  top: -6em;
+}
+
+.md-color__anchor:target + .md-color {
+  border-left: solid 0.8em white;
 }
 
 .md-color__name {
-  margin-bottom: 48px;
+  margin: 0.8em;
+  margin-bottom: 3.2em;
 }
 
 .md-color__label {
+  margin: 0.8em;
   position: relative;
   overflow: hidden;
 }
@@ -89,7 +101,7 @@ header p {
 }
 
 .readme {
-  padding: 1em;
+  padding: 0.8em 1.6em;;
 }
 
 a {
@@ -142,9 +154,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FFEBEE">
+              <a class="md-color__anchor" id="red-50"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  50
+                  <a href="#red-50">50</a>
                 </div>
                 <div class="md-color__label__value">
                   #FFEBEE
@@ -152,9 +165,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FFCDD2">
+              <a class="md-color__anchor" id="red-100"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  100
+                  <a href="#red-100">100</a>
                 </div>
                 <div class="md-color__label__value">
                   #FFCDD2
@@ -162,9 +176,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #EF9A9A">
+              <a class="md-color__anchor" id="red-200"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  200
+                  <a href="#red-200">200</a>
                 </div>
                 <div class="md-color__label__value">
                   #EF9A9A
@@ -172,9 +187,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #E57373">
+              <a class="md-color__anchor" id="red-300"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  300
+                  <a href="#red-300">300</a>
                 </div>
                 <div class="md-color__label__value">
                   #E57373
@@ -182,9 +198,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #EF5350">
+              <a class="md-color__anchor" id="red-400"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  400
+                  <a href="#red-400">400</a>
                 </div>
                 <div class="md-color__label__value">
                   #EF5350
@@ -192,9 +209,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #F44336">
+              <a class="md-color__anchor" id="red-500"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  500
+                  <a href="#red-500">500</a>
                 </div>
                 <div class="md-color__label__value">
                   #F44336
@@ -202,9 +220,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #E53935">
+              <a class="md-color__anchor" id="red-600"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  600
+                  <a href="#red-600">600</a>
                 </div>
                 <div class="md-color__label__value">
                   #E53935
@@ -212,9 +231,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #D32F2F">
+              <a class="md-color__anchor" id="red-700"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  700
+                  <a href="#red-700">700</a>
                 </div>
                 <div class="md-color__label__value">
                   #D32F2F
@@ -222,9 +242,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #C62828">
+              <a class="md-color__anchor" id="red-800"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  800
+                  <a href="#red-800">800</a>
                 </div>
                 <div class="md-color__label__value">
                   #C62828
@@ -232,9 +253,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #B71C1C">
+              <a class="md-color__anchor" id="red-900"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  900
+                  <a href="#red-900">900</a>
                 </div>
                 <div class="md-color__label__value">
                   #B71C1C
@@ -242,9 +264,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FF8A80">
+              <a class="md-color__anchor" id="red-a100"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a100
+                  <a href="#red-a100">a100</a>
                 </div>
                 <div class="md-color__label__value">
                   #FF8A80
@@ -252,9 +275,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FF5252">
+              <a class="md-color__anchor" id="red-a200"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a200
+                  <a href="#red-a200">a200</a>
                 </div>
                 <div class="md-color__label__value">
                   #FF5252
@@ -262,9 +286,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FF1744">
+              <a class="md-color__anchor" id="red-a400"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a400
+                  <a href="#red-a400">a400</a>
                 </div>
                 <div class="md-color__label__value">
                   #FF1744
@@ -272,9 +297,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #D50000">
+              <a class="md-color__anchor" id="red-a700"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a700
+                  <a href="#red-a700">a700</a>
                 </div>
                 <div class="md-color__label__value">
                   #D50000
@@ -300,9 +326,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FCE4EC">
+              <a class="md-color__anchor" id="pink-50"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  50
+                  <a href="#pink-50">50</a>
                 </div>
                 <div class="md-color__label__value">
                   #FCE4EC
@@ -310,9 +337,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #F8BBD0">
+              <a class="md-color__anchor" id="pink-100"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  100
+                  <a href="#pink-100">100</a>
                 </div>
                 <div class="md-color__label__value">
                   #F8BBD0
@@ -320,9 +348,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #F48FB1">
+              <a class="md-color__anchor" id="pink-200"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  200
+                  <a href="#pink-200">200</a>
                 </div>
                 <div class="md-color__label__value">
                   #F48FB1
@@ -330,9 +359,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #F06292">
+              <a class="md-color__anchor" id="pink-300"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  300
+                  <a href="#pink-300">300</a>
                 </div>
                 <div class="md-color__label__value">
                   #F06292
@@ -340,9 +370,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #EC407A">
+              <a class="md-color__anchor" id="pink-400"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  400
+                  <a href="#pink-400">400</a>
                 </div>
                 <div class="md-color__label__value">
                   #EC407A
@@ -350,9 +381,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #E91E63">
+              <a class="md-color__anchor" id="pink-500"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  500
+                  <a href="#pink-500">500</a>
                 </div>
                 <div class="md-color__label__value">
                   #E91E63
@@ -360,9 +392,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #D81B60">
+              <a class="md-color__anchor" id="pink-600"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  600
+                  <a href="#pink-600">600</a>
                 </div>
                 <div class="md-color__label__value">
                   #D81B60
@@ -370,9 +403,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #C2185B">
+              <a class="md-color__anchor" id="pink-700"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  700
+                  <a href="#pink-700">700</a>
                 </div>
                 <div class="md-color__label__value">
                   #C2185B
@@ -380,9 +414,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #AD1457">
+              <a class="md-color__anchor" id="pink-800"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  800
+                  <a href="#pink-800">800</a>
                 </div>
                 <div class="md-color__label__value">
                   #AD1457
@@ -390,9 +425,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #880E4F">
+              <a class="md-color__anchor" id="pink-900"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  900
+                  <a href="#pink-900">900</a>
                 </div>
                 <div class="md-color__label__value">
                   #880E4F
@@ -400,9 +436,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FF80AB">
+              <a class="md-color__anchor" id="pink-a100"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a100
+                  <a href="#pink-a100">a100</a>
                 </div>
                 <div class="md-color__label__value">
                   #FF80AB
@@ -410,9 +447,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FF4081">
+              <a class="md-color__anchor" id="pink-a200"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a200
+                  <a href="#pink-a200">a200</a>
                 </div>
                 <div class="md-color__label__value">
                   #FF4081
@@ -420,9 +458,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #F50057">
+              <a class="md-color__anchor" id="pink-a400"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a400
+                  <a href="#pink-a400">a400</a>
                 </div>
                 <div class="md-color__label__value">
                   #F50057
@@ -430,9 +469,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #C51162">
+              <a class="md-color__anchor" id="pink-a700"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a700
+                  <a href="#pink-a700">a700</a>
                 </div>
                 <div class="md-color__label__value">
                   #C51162
@@ -458,9 +498,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #F3E5F5">
+              <a class="md-color__anchor" id="purple-50"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  50
+                  <a href="#purple-50">50</a>
                 </div>
                 <div class="md-color__label__value">
                   #F3E5F5
@@ -468,9 +509,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #E1BEE7">
+              <a class="md-color__anchor" id="purple-100"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  100
+                  <a href="#purple-100">100</a>
                 </div>
                 <div class="md-color__label__value">
                   #E1BEE7
@@ -478,9 +520,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #CE93D8">
+              <a class="md-color__anchor" id="purple-200"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  200
+                  <a href="#purple-200">200</a>
                 </div>
                 <div class="md-color__label__value">
                   #CE93D8
@@ -488,9 +531,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #BA68C8">
+              <a class="md-color__anchor" id="purple-300"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  300
+                  <a href="#purple-300">300</a>
                 </div>
                 <div class="md-color__label__value">
                   #BA68C8
@@ -498,9 +542,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #AB47BC">
+              <a class="md-color__anchor" id="purple-400"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  400
+                  <a href="#purple-400">400</a>
                 </div>
                 <div class="md-color__label__value">
                   #AB47BC
@@ -508,9 +553,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #9C27B0">
+              <a class="md-color__anchor" id="purple-500"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  500
+                  <a href="#purple-500">500</a>
                 </div>
                 <div class="md-color__label__value">
                   #9C27B0
@@ -518,9 +564,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #8E24AA">
+              <a class="md-color__anchor" id="purple-600"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  600
+                  <a href="#purple-600">600</a>
                 </div>
                 <div class="md-color__label__value">
                   #8E24AA
@@ -528,9 +575,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #7B1FA2">
+              <a class="md-color__anchor" id="purple-700"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  700
+                  <a href="#purple-700">700</a>
                 </div>
                 <div class="md-color__label__value">
                   #7B1FA2
@@ -538,9 +586,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #6A1B9A">
+              <a class="md-color__anchor" id="purple-800"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  800
+                  <a href="#purple-800">800</a>
                 </div>
                 <div class="md-color__label__value">
                   #6A1B9A
@@ -548,9 +597,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #4A148C">
+              <a class="md-color__anchor" id="purple-900"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  900
+                  <a href="#purple-900">900</a>
                 </div>
                 <div class="md-color__label__value">
                   #4A148C
@@ -558,9 +608,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #EA80FC">
+              <a class="md-color__anchor" id="purple-a100"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a100
+                  <a href="#purple-a100">a100</a>
                 </div>
                 <div class="md-color__label__value">
                   #EA80FC
@@ -568,9 +619,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #E040FB">
+              <a class="md-color__anchor" id="purple-a200"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a200
+                  <a href="#purple-a200">a200</a>
                 </div>
                 <div class="md-color__label__value">
                   #E040FB
@@ -578,9 +630,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #D500F9">
+              <a class="md-color__anchor" id="purple-a400"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a400
+                  <a href="#purple-a400">a400</a>
                 </div>
                 <div class="md-color__label__value">
                   #D500F9
@@ -588,9 +641,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #AA00FF">
+              <a class="md-color__anchor" id="purple-a700"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a700
+                  <a href="#purple-a700">a700</a>
                 </div>
                 <div class="md-color__label__value">
                   #AA00FF
@@ -616,9 +670,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #EDE7F6">
+              <a class="md-color__anchor" id="deep-purple-50"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  50
+                  <a href="#deep-purple-50">50</a>
                 </div>
                 <div class="md-color__label__value">
                   #EDE7F6
@@ -626,9 +681,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #D1C4E9">
+              <a class="md-color__anchor" id="deep-purple-100"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  100
+                  <a href="#deep-purple-100">100</a>
                 </div>
                 <div class="md-color__label__value">
                   #D1C4E9
@@ -636,9 +692,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #B39DDB">
+              <a class="md-color__anchor" id="deep-purple-200"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  200
+                  <a href="#deep-purple-200">200</a>
                 </div>
                 <div class="md-color__label__value">
                   #B39DDB
@@ -646,9 +703,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #9575CD">
+              <a class="md-color__anchor" id="deep-purple-300"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  300
+                  <a href="#deep-purple-300">300</a>
                 </div>
                 <div class="md-color__label__value">
                   #9575CD
@@ -656,9 +714,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #7E57C2">
+              <a class="md-color__anchor" id="deep-purple-400"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  400
+                  <a href="#deep-purple-400">400</a>
                 </div>
                 <div class="md-color__label__value">
                   #7E57C2
@@ -666,9 +725,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #673AB7">
+              <a class="md-color__anchor" id="deep-purple-500"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  500
+                  <a href="#deep-purple-500">500</a>
                 </div>
                 <div class="md-color__label__value">
                   #673AB7
@@ -676,9 +736,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #5E35B1">
+              <a class="md-color__anchor" id="deep-purple-600"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  600
+                  <a href="#deep-purple-600">600</a>
                 </div>
                 <div class="md-color__label__value">
                   #5E35B1
@@ -686,9 +747,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #512DA8">
+              <a class="md-color__anchor" id="deep-purple-700"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  700
+                  <a href="#deep-purple-700">700</a>
                 </div>
                 <div class="md-color__label__value">
                   #512DA8
@@ -696,9 +758,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #4527A0">
+              <a class="md-color__anchor" id="deep-purple-800"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  800
+                  <a href="#deep-purple-800">800</a>
                 </div>
                 <div class="md-color__label__value">
                   #4527A0
@@ -706,9 +769,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #311B92">
+              <a class="md-color__anchor" id="deep-purple-900"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  900
+                  <a href="#deep-purple-900">900</a>
                 </div>
                 <div class="md-color__label__value">
                   #311B92
@@ -716,9 +780,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #B388FF">
+              <a class="md-color__anchor" id="deep-purple-a100"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a100
+                  <a href="#deep-purple-a100">a100</a>
                 </div>
                 <div class="md-color__label__value">
                   #B388FF
@@ -726,9 +791,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #7C4DFF">
+              <a class="md-color__anchor" id="deep-purple-a200"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a200
+                  <a href="#deep-purple-a200">a200</a>
                 </div>
                 <div class="md-color__label__value">
                   #7C4DFF
@@ -736,9 +802,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #651FFF">
+              <a class="md-color__anchor" id="deep-purple-a400"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a400
+                  <a href="#deep-purple-a400">a400</a>
                 </div>
                 <div class="md-color__label__value">
                   #651FFF
@@ -746,9 +813,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #6200EA">
+              <a class="md-color__anchor" id="deep-purple-a700"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a700
+                  <a href="#deep-purple-a700">a700</a>
                 </div>
                 <div class="md-color__label__value">
                   #6200EA
@@ -774,9 +842,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #E8EAF6">
+              <a class="md-color__anchor" id="indigo-50"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  50
+                  <a href="#indigo-50">50</a>
                 </div>
                 <div class="md-color__label__value">
                   #E8EAF6
@@ -784,9 +853,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #C5CAE9">
+              <a class="md-color__anchor" id="indigo-100"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  100
+                  <a href="#indigo-100">100</a>
                 </div>
                 <div class="md-color__label__value">
                   #C5CAE9
@@ -794,9 +864,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #9FA8DA">
+              <a class="md-color__anchor" id="indigo-200"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  200
+                  <a href="#indigo-200">200</a>
                 </div>
                 <div class="md-color__label__value">
                   #9FA8DA
@@ -804,9 +875,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #7986CB">
+              <a class="md-color__anchor" id="indigo-300"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  300
+                  <a href="#indigo-300">300</a>
                 </div>
                 <div class="md-color__label__value">
                   #7986CB
@@ -814,9 +886,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #5C6BC0">
+              <a class="md-color__anchor" id="indigo-400"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  400
+                  <a href="#indigo-400">400</a>
                 </div>
                 <div class="md-color__label__value">
                   #5C6BC0
@@ -824,9 +897,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #3F51B5">
+              <a class="md-color__anchor" id="indigo-500"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  500
+                  <a href="#indigo-500">500</a>
                 </div>
                 <div class="md-color__label__value">
                   #3F51B5
@@ -834,9 +908,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #3949AB">
+              <a class="md-color__anchor" id="indigo-600"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  600
+                  <a href="#indigo-600">600</a>
                 </div>
                 <div class="md-color__label__value">
                   #3949AB
@@ -844,9 +919,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #303F9F">
+              <a class="md-color__anchor" id="indigo-700"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  700
+                  <a href="#indigo-700">700</a>
                 </div>
                 <div class="md-color__label__value">
                   #303F9F
@@ -854,9 +930,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #283593">
+              <a class="md-color__anchor" id="indigo-800"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  800
+                  <a href="#indigo-800">800</a>
                 </div>
                 <div class="md-color__label__value">
                   #283593
@@ -864,9 +941,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #1A237E">
+              <a class="md-color__anchor" id="indigo-900"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  900
+                  <a href="#indigo-900">900</a>
                 </div>
                 <div class="md-color__label__value">
                   #1A237E
@@ -874,9 +952,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #8C9EFF">
+              <a class="md-color__anchor" id="indigo-a100"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a100
+                  <a href="#indigo-a100">a100</a>
                 </div>
                 <div class="md-color__label__value">
                   #8C9EFF
@@ -884,9 +963,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #536DFE">
+              <a class="md-color__anchor" id="indigo-a200"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a200
+                  <a href="#indigo-a200">a200</a>
                 </div>
                 <div class="md-color__label__value">
                   #536DFE
@@ -894,9 +974,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #3D5AFE">
+              <a class="md-color__anchor" id="indigo-a400"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a400
+                  <a href="#indigo-a400">a400</a>
                 </div>
                 <div class="md-color__label__value">
                   #3D5AFE
@@ -904,9 +985,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #304FFE">
+              <a class="md-color__anchor" id="indigo-a700"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a700
+                  <a href="#indigo-a700">a700</a>
                 </div>
                 <div class="md-color__label__value">
                   #304FFE
@@ -932,9 +1014,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #E3F2FD">
+              <a class="md-color__anchor" id="blue-50"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  50
+                  <a href="#blue-50">50</a>
                 </div>
                 <div class="md-color__label__value">
                   #E3F2FD
@@ -942,9 +1025,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #BBDEFB">
+              <a class="md-color__anchor" id="blue-100"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  100
+                  <a href="#blue-100">100</a>
                 </div>
                 <div class="md-color__label__value">
                   #BBDEFB
@@ -952,9 +1036,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #90CAF9">
+              <a class="md-color__anchor" id="blue-200"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  200
+                  <a href="#blue-200">200</a>
                 </div>
                 <div class="md-color__label__value">
                   #90CAF9
@@ -962,9 +1047,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #64B5F6">
+              <a class="md-color__anchor" id="blue-300"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  300
+                  <a href="#blue-300">300</a>
                 </div>
                 <div class="md-color__label__value">
                   #64B5F6
@@ -972,9 +1058,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #42A5F5">
+              <a class="md-color__anchor" id="blue-400"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  400
+                  <a href="#blue-400">400</a>
                 </div>
                 <div class="md-color__label__value">
                   #42A5F5
@@ -982,9 +1069,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #2196F3">
+              <a class="md-color__anchor" id="blue-500"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  500
+                  <a href="#blue-500">500</a>
                 </div>
                 <div class="md-color__label__value">
                   #2196F3
@@ -992,9 +1080,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #1E88E5">
+              <a class="md-color__anchor" id="blue-600"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  600
+                  <a href="#blue-600">600</a>
                 </div>
                 <div class="md-color__label__value">
                   #1E88E5
@@ -1002,9 +1091,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #1976D2">
+              <a class="md-color__anchor" id="blue-700"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  700
+                  <a href="#blue-700">700</a>
                 </div>
                 <div class="md-color__label__value">
                   #1976D2
@@ -1012,9 +1102,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #1565C0">
+              <a class="md-color__anchor" id="blue-800"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  800
+                  <a href="#blue-800">800</a>
                 </div>
                 <div class="md-color__label__value">
                   #1565C0
@@ -1022,9 +1113,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #0D47A1">
+              <a class="md-color__anchor" id="blue-900"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  900
+                  <a href="#blue-900">900</a>
                 </div>
                 <div class="md-color__label__value">
                   #0D47A1
@@ -1032,9 +1124,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #82B1FF">
+              <a class="md-color__anchor" id="blue-a100"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a100
+                  <a href="#blue-a100">a100</a>
                 </div>
                 <div class="md-color__label__value">
                   #82B1FF
@@ -1042,9 +1135,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #448AFF">
+              <a class="md-color__anchor" id="blue-a200"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a200
+                  <a href="#blue-a200">a200</a>
                 </div>
                 <div class="md-color__label__value">
                   #448AFF
@@ -1052,9 +1146,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #2979FF">
+              <a class="md-color__anchor" id="blue-a400"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a400
+                  <a href="#blue-a400">a400</a>
                 </div>
                 <div class="md-color__label__value">
                   #2979FF
@@ -1062,9 +1157,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #2962FF">
+              <a class="md-color__anchor" id="blue-a700"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a700
+                  <a href="#blue-a700">a700</a>
                 </div>
                 <div class="md-color__label__value">
                   #2962FF
@@ -1090,9 +1186,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #E1F5FE">
+              <a class="md-color__anchor" id="light-blue-50"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  50
+                  <a href="#light-blue-50">50</a>
                 </div>
                 <div class="md-color__label__value">
                   #E1F5FE
@@ -1100,9 +1197,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #B3E5FC">
+              <a class="md-color__anchor" id="light-blue-100"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  100
+                  <a href="#light-blue-100">100</a>
                 </div>
                 <div class="md-color__label__value">
                   #B3E5FC
@@ -1110,9 +1208,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #81D4FA">
+              <a class="md-color__anchor" id="light-blue-200"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  200
+                  <a href="#light-blue-200">200</a>
                 </div>
                 <div class="md-color__label__value">
                   #81D4FA
@@ -1120,9 +1219,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #4FC3F7">
+              <a class="md-color__anchor" id="light-blue-300"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  300
+                  <a href="#light-blue-300">300</a>
                 </div>
                 <div class="md-color__label__value">
                   #4FC3F7
@@ -1130,9 +1230,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #29B6F6">
+              <a class="md-color__anchor" id="light-blue-400"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  400
+                  <a href="#light-blue-400">400</a>
                 </div>
                 <div class="md-color__label__value">
                   #29B6F6
@@ -1140,9 +1241,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #03A9F4">
+              <a class="md-color__anchor" id="light-blue-500"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  500
+                  <a href="#light-blue-500">500</a>
                 </div>
                 <div class="md-color__label__value">
                   #03A9F4
@@ -1150,9 +1252,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #039BE5">
+              <a class="md-color__anchor" id="light-blue-600"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  600
+                  <a href="#light-blue-600">600</a>
                 </div>
                 <div class="md-color__label__value">
                   #039BE5
@@ -1160,9 +1263,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #0288D1">
+              <a class="md-color__anchor" id="light-blue-700"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  700
+                  <a href="#light-blue-700">700</a>
                 </div>
                 <div class="md-color__label__value">
                   #0288D1
@@ -1170,9 +1274,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #0277BD">
+              <a class="md-color__anchor" id="light-blue-800"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  800
+                  <a href="#light-blue-800">800</a>
                 </div>
                 <div class="md-color__label__value">
                   #0277BD
@@ -1180,9 +1285,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #01579B">
+              <a class="md-color__anchor" id="light-blue-900"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  900
+                  <a href="#light-blue-900">900</a>
                 </div>
                 <div class="md-color__label__value">
                   #01579B
@@ -1190,9 +1296,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #80D8FF">
+              <a class="md-color__anchor" id="light-blue-a100"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a100
+                  <a href="#light-blue-a100">a100</a>
                 </div>
                 <div class="md-color__label__value">
                   #80D8FF
@@ -1200,9 +1307,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #40C4FF">
+              <a class="md-color__anchor" id="light-blue-a200"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a200
+                  <a href="#light-blue-a200">a200</a>
                 </div>
                 <div class="md-color__label__value">
                   #40C4FF
@@ -1210,9 +1318,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #00B0FF">
+              <a class="md-color__anchor" id="light-blue-a400"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a400
+                  <a href="#light-blue-a400">a400</a>
                 </div>
                 <div class="md-color__label__value">
                   #00B0FF
@@ -1220,9 +1329,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #0091EA">
+              <a class="md-color__anchor" id="light-blue-a700"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a700
+                  <a href="#light-blue-a700">a700</a>
                 </div>
                 <div class="md-color__label__value">
                   #0091EA
@@ -1248,9 +1358,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #E0F7FA">
+              <a class="md-color__anchor" id="cyan-50"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  50
+                  <a href="#cyan-50">50</a>
                 </div>
                 <div class="md-color__label__value">
                   #E0F7FA
@@ -1258,9 +1369,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #B2EBF2">
+              <a class="md-color__anchor" id="cyan-100"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  100
+                  <a href="#cyan-100">100</a>
                 </div>
                 <div class="md-color__label__value">
                   #B2EBF2
@@ -1268,9 +1380,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #80DEEA">
+              <a class="md-color__anchor" id="cyan-200"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  200
+                  <a href="#cyan-200">200</a>
                 </div>
                 <div class="md-color__label__value">
                   #80DEEA
@@ -1278,9 +1391,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #4DD0E1">
+              <a class="md-color__anchor" id="cyan-300"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  300
+                  <a href="#cyan-300">300</a>
                 </div>
                 <div class="md-color__label__value">
                   #4DD0E1
@@ -1288,9 +1402,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #26C6DA">
+              <a class="md-color__anchor" id="cyan-400"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  400
+                  <a href="#cyan-400">400</a>
                 </div>
                 <div class="md-color__label__value">
                   #26C6DA
@@ -1298,9 +1413,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #00BCD4">
+              <a class="md-color__anchor" id="cyan-500"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  500
+                  <a href="#cyan-500">500</a>
                 </div>
                 <div class="md-color__label__value">
                   #00BCD4
@@ -1308,9 +1424,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #00ACC1">
+              <a class="md-color__anchor" id="cyan-600"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  600
+                  <a href="#cyan-600">600</a>
                 </div>
                 <div class="md-color__label__value">
                   #00ACC1
@@ -1318,9 +1435,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #0097A7">
+              <a class="md-color__anchor" id="cyan-700"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  700
+                  <a href="#cyan-700">700</a>
                 </div>
                 <div class="md-color__label__value">
                   #0097A7
@@ -1328,9 +1446,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #00838F">
+              <a class="md-color__anchor" id="cyan-800"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  800
+                  <a href="#cyan-800">800</a>
                 </div>
                 <div class="md-color__label__value">
                   #00838F
@@ -1338,9 +1457,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #006064">
+              <a class="md-color__anchor" id="cyan-900"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  900
+                  <a href="#cyan-900">900</a>
                 </div>
                 <div class="md-color__label__value">
                   #006064
@@ -1348,9 +1468,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #84FFFF">
+              <a class="md-color__anchor" id="cyan-a100"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a100
+                  <a href="#cyan-a100">a100</a>
                 </div>
                 <div class="md-color__label__value">
                   #84FFFF
@@ -1358,9 +1479,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #18FFFF">
+              <a class="md-color__anchor" id="cyan-a200"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a200
+                  <a href="#cyan-a200">a200</a>
                 </div>
                 <div class="md-color__label__value">
                   #18FFFF
@@ -1368,9 +1490,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #00E5FF">
+              <a class="md-color__anchor" id="cyan-a400"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a400
+                  <a href="#cyan-a400">a400</a>
                 </div>
                 <div class="md-color__label__value">
                   #00E5FF
@@ -1378,9 +1501,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #00B8D4">
+              <a class="md-color__anchor" id="cyan-a700"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a700
+                  <a href="#cyan-a700">a700</a>
                 </div>
                 <div class="md-color__label__value">
                   #00B8D4
@@ -1406,9 +1530,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #E0F2F1">
+              <a class="md-color__anchor" id="teal-50"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  50
+                  <a href="#teal-50">50</a>
                 </div>
                 <div class="md-color__label__value">
                   #E0F2F1
@@ -1416,9 +1541,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #B2DFDB">
+              <a class="md-color__anchor" id="teal-100"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  100
+                  <a href="#teal-100">100</a>
                 </div>
                 <div class="md-color__label__value">
                   #B2DFDB
@@ -1426,9 +1552,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #80CBC4">
+              <a class="md-color__anchor" id="teal-200"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  200
+                  <a href="#teal-200">200</a>
                 </div>
                 <div class="md-color__label__value">
                   #80CBC4
@@ -1436,9 +1563,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #4DB6AC">
+              <a class="md-color__anchor" id="teal-300"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  300
+                  <a href="#teal-300">300</a>
                 </div>
                 <div class="md-color__label__value">
                   #4DB6AC
@@ -1446,9 +1574,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #26A69A">
+              <a class="md-color__anchor" id="teal-400"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  400
+                  <a href="#teal-400">400</a>
                 </div>
                 <div class="md-color__label__value">
                   #26A69A
@@ -1456,9 +1585,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #009688">
+              <a class="md-color__anchor" id="teal-500"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  500
+                  <a href="#teal-500">500</a>
                 </div>
                 <div class="md-color__label__value">
                   #009688
@@ -1466,9 +1596,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #00897B">
+              <a class="md-color__anchor" id="teal-600"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  600
+                  <a href="#teal-600">600</a>
                 </div>
                 <div class="md-color__label__value">
                   #00897B
@@ -1476,9 +1607,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #00796B">
+              <a class="md-color__anchor" id="teal-700"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  700
+                  <a href="#teal-700">700</a>
                 </div>
                 <div class="md-color__label__value">
                   #00796B
@@ -1486,9 +1618,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #00695C">
+              <a class="md-color__anchor" id="teal-800"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  800
+                  <a href="#teal-800">800</a>
                 </div>
                 <div class="md-color__label__value">
                   #00695C
@@ -1496,9 +1629,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #004D40">
+              <a class="md-color__anchor" id="teal-900"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  900
+                  <a href="#teal-900">900</a>
                 </div>
                 <div class="md-color__label__value">
                   #004D40
@@ -1506,9 +1640,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #A7FFEB">
+              <a class="md-color__anchor" id="teal-a100"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a100
+                  <a href="#teal-a100">a100</a>
                 </div>
                 <div class="md-color__label__value">
                   #A7FFEB
@@ -1516,9 +1651,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #64FFDA">
+              <a class="md-color__anchor" id="teal-a200"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a200
+                  <a href="#teal-a200">a200</a>
                 </div>
                 <div class="md-color__label__value">
                   #64FFDA
@@ -1526,9 +1662,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #1DE9B6">
+              <a class="md-color__anchor" id="teal-a400"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a400
+                  <a href="#teal-a400">a400</a>
                 </div>
                 <div class="md-color__label__value">
                   #1DE9B6
@@ -1536,9 +1673,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #00BFA5">
+              <a class="md-color__anchor" id="teal-a700"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a700
+                  <a href="#teal-a700">a700</a>
                 </div>
                 <div class="md-color__label__value">
                   #00BFA5
@@ -1564,9 +1702,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #E8F5E9">
+              <a class="md-color__anchor" id="green-50"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  50
+                  <a href="#green-50">50</a>
                 </div>
                 <div class="md-color__label__value">
                   #E8F5E9
@@ -1574,9 +1713,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #C8E6C9">
+              <a class="md-color__anchor" id="green-100"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  100
+                  <a href="#green-100">100</a>
                 </div>
                 <div class="md-color__label__value">
                   #C8E6C9
@@ -1584,9 +1724,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #A5D6A7">
+              <a class="md-color__anchor" id="green-200"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  200
+                  <a href="#green-200">200</a>
                 </div>
                 <div class="md-color__label__value">
                   #A5D6A7
@@ -1594,9 +1735,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #81C784">
+              <a class="md-color__anchor" id="green-300"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  300
+                  <a href="#green-300">300</a>
                 </div>
                 <div class="md-color__label__value">
                   #81C784
@@ -1604,9 +1746,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #66BB6A">
+              <a class="md-color__anchor" id="green-400"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  400
+                  <a href="#green-400">400</a>
                 </div>
                 <div class="md-color__label__value">
                   #66BB6A
@@ -1614,9 +1757,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #4CAF50">
+              <a class="md-color__anchor" id="green-500"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  500
+                  <a href="#green-500">500</a>
                 </div>
                 <div class="md-color__label__value">
                   #4CAF50
@@ -1624,9 +1768,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #43A047">
+              <a class="md-color__anchor" id="green-600"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  600
+                  <a href="#green-600">600</a>
                 </div>
                 <div class="md-color__label__value">
                   #43A047
@@ -1634,9 +1779,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #388E3C">
+              <a class="md-color__anchor" id="green-700"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  700
+                  <a href="#green-700">700</a>
                 </div>
                 <div class="md-color__label__value">
                   #388E3C
@@ -1644,9 +1790,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #2E7D32">
+              <a class="md-color__anchor" id="green-800"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  800
+                  <a href="#green-800">800</a>
                 </div>
                 <div class="md-color__label__value">
                   #2E7D32
@@ -1654,9 +1801,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #1B5E20">
+              <a class="md-color__anchor" id="green-900"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  900
+                  <a href="#green-900">900</a>
                 </div>
                 <div class="md-color__label__value">
                   #1B5E20
@@ -1664,9 +1812,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #B9F6CA">
+              <a class="md-color__anchor" id="green-a100"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a100
+                  <a href="#green-a100">a100</a>
                 </div>
                 <div class="md-color__label__value">
                   #B9F6CA
@@ -1674,9 +1823,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #69F0AE">
+              <a class="md-color__anchor" id="green-a200"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a200
+                  <a href="#green-a200">a200</a>
                 </div>
                 <div class="md-color__label__value">
                   #69F0AE
@@ -1684,9 +1834,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #00E676">
+              <a class="md-color__anchor" id="green-a400"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a400
+                  <a href="#green-a400">a400</a>
                 </div>
                 <div class="md-color__label__value">
                   #00E676
@@ -1694,9 +1845,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #00C853">
+              <a class="md-color__anchor" id="green-a700"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a700
+                  <a href="#green-a700">a700</a>
                 </div>
                 <div class="md-color__label__value">
                   #00C853
@@ -1722,9 +1874,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #F1F8E9">
+              <a class="md-color__anchor" id="light-green-50"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  50
+                  <a href="#light-green-50">50</a>
                 </div>
                 <div class="md-color__label__value">
                   #F1F8E9
@@ -1732,9 +1885,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #DCEDC8">
+              <a class="md-color__anchor" id="light-green-100"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  100
+                  <a href="#light-green-100">100</a>
                 </div>
                 <div class="md-color__label__value">
                   #DCEDC8
@@ -1742,9 +1896,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #C5E1A5">
+              <a class="md-color__anchor" id="light-green-200"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  200
+                  <a href="#light-green-200">200</a>
                 </div>
                 <div class="md-color__label__value">
                   #C5E1A5
@@ -1752,9 +1907,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #AED581">
+              <a class="md-color__anchor" id="light-green-300"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  300
+                  <a href="#light-green-300">300</a>
                 </div>
                 <div class="md-color__label__value">
                   #AED581
@@ -1762,9 +1918,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #9CCC65">
+              <a class="md-color__anchor" id="light-green-400"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  400
+                  <a href="#light-green-400">400</a>
                 </div>
                 <div class="md-color__label__value">
                   #9CCC65
@@ -1772,9 +1929,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #8BC34A">
+              <a class="md-color__anchor" id="light-green-500"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  500
+                  <a href="#light-green-500">500</a>
                 </div>
                 <div class="md-color__label__value">
                   #8BC34A
@@ -1782,9 +1940,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #7CB342">
+              <a class="md-color__anchor" id="light-green-600"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  600
+                  <a href="#light-green-600">600</a>
                 </div>
                 <div class="md-color__label__value">
                   #7CB342
@@ -1792,9 +1951,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #689F38">
+              <a class="md-color__anchor" id="light-green-700"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  700
+                  <a href="#light-green-700">700</a>
                 </div>
                 <div class="md-color__label__value">
                   #689F38
@@ -1802,9 +1962,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #558B2F">
+              <a class="md-color__anchor" id="light-green-800"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  800
+                  <a href="#light-green-800">800</a>
                 </div>
                 <div class="md-color__label__value">
                   #558B2F
@@ -1812,9 +1973,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #33691E">
+              <a class="md-color__anchor" id="light-green-900"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  900
+                  <a href="#light-green-900">900</a>
                 </div>
                 <div class="md-color__label__value">
                   #33691E
@@ -1822,9 +1984,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #CCFF90">
+              <a class="md-color__anchor" id="light-green-a100"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a100
+                  <a href="#light-green-a100">a100</a>
                 </div>
                 <div class="md-color__label__value">
                   #CCFF90
@@ -1832,9 +1995,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #B2FF59">
+              <a class="md-color__anchor" id="light-green-a200"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a200
+                  <a href="#light-green-a200">a200</a>
                 </div>
                 <div class="md-color__label__value">
                   #B2FF59
@@ -1842,9 +2006,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #76FF03">
+              <a class="md-color__anchor" id="light-green-a400"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a400
+                  <a href="#light-green-a400">a400</a>
                 </div>
                 <div class="md-color__label__value">
                   #76FF03
@@ -1852,9 +2017,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #64DD17">
+              <a class="md-color__anchor" id="light-green-a700"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a700
+                  <a href="#light-green-a700">a700</a>
                 </div>
                 <div class="md-color__label__value">
                   #64DD17
@@ -1880,9 +2046,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #F9FBE7">
+              <a class="md-color__anchor" id="lime-50"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  50
+                  <a href="#lime-50">50</a>
                 </div>
                 <div class="md-color__label__value">
                   #F9FBE7
@@ -1890,9 +2057,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #F0F4C3">
+              <a class="md-color__anchor" id="lime-100"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  100
+                  <a href="#lime-100">100</a>
                 </div>
                 <div class="md-color__label__value">
                   #F0F4C3
@@ -1900,9 +2068,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #E6EE9C">
+              <a class="md-color__anchor" id="lime-200"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  200
+                  <a href="#lime-200">200</a>
                 </div>
                 <div class="md-color__label__value">
                   #E6EE9C
@@ -1910,9 +2079,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #DCE775">
+              <a class="md-color__anchor" id="lime-300"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  300
+                  <a href="#lime-300">300</a>
                 </div>
                 <div class="md-color__label__value">
                   #DCE775
@@ -1920,9 +2090,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #D4E157">
+              <a class="md-color__anchor" id="lime-400"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  400
+                  <a href="#lime-400">400</a>
                 </div>
                 <div class="md-color__label__value">
                   #D4E157
@@ -1930,9 +2101,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #CDDC39">
+              <a class="md-color__anchor" id="lime-500"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  500
+                  <a href="#lime-500">500</a>
                 </div>
                 <div class="md-color__label__value">
                   #CDDC39
@@ -1940,9 +2112,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #C0CA33">
+              <a class="md-color__anchor" id="lime-600"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  600
+                  <a href="#lime-600">600</a>
                 </div>
                 <div class="md-color__label__value">
                   #C0CA33
@@ -1950,9 +2123,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #AFB42B">
+              <a class="md-color__anchor" id="lime-700"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  700
+                  <a href="#lime-700">700</a>
                 </div>
                 <div class="md-color__label__value">
                   #AFB42B
@@ -1960,9 +2134,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #9E9D24">
+              <a class="md-color__anchor" id="lime-800"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  800
+                  <a href="#lime-800">800</a>
                 </div>
                 <div class="md-color__label__value">
                   #9E9D24
@@ -1970,9 +2145,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #827717">
+              <a class="md-color__anchor" id="lime-900"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  900
+                  <a href="#lime-900">900</a>
                 </div>
                 <div class="md-color__label__value">
                   #827717
@@ -1980,9 +2156,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #F4FF81">
+              <a class="md-color__anchor" id="lime-a100"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a100
+                  <a href="#lime-a100">a100</a>
                 </div>
                 <div class="md-color__label__value">
                   #F4FF81
@@ -1990,9 +2167,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #EEFF41">
+              <a class="md-color__anchor" id="lime-a200"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a200
+                  <a href="#lime-a200">a200</a>
                 </div>
                 <div class="md-color__label__value">
                   #EEFF41
@@ -2000,9 +2178,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #C6FF00">
+              <a class="md-color__anchor" id="lime-a400"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a400
+                  <a href="#lime-a400">a400</a>
                 </div>
                 <div class="md-color__label__value">
                   #C6FF00
@@ -2010,9 +2189,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #AEEA00">
+              <a class="md-color__anchor" id="lime-a700"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a700
+                  <a href="#lime-a700">a700</a>
                 </div>
                 <div class="md-color__label__value">
                   #AEEA00
@@ -2038,9 +2218,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FFFDE7">
+              <a class="md-color__anchor" id="yellow-50"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  50
+                  <a href="#yellow-50">50</a>
                 </div>
                 <div class="md-color__label__value">
                   #FFFDE7
@@ -2048,9 +2229,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FFF9C4">
+              <a class="md-color__anchor" id="yellow-100"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  100
+                  <a href="#yellow-100">100</a>
                 </div>
                 <div class="md-color__label__value">
                   #FFF9C4
@@ -2058,9 +2240,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FFF59D">
+              <a class="md-color__anchor" id="yellow-200"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  200
+                  <a href="#yellow-200">200</a>
                 </div>
                 <div class="md-color__label__value">
                   #FFF59D
@@ -2068,9 +2251,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FFF176">
+              <a class="md-color__anchor" id="yellow-300"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  300
+                  <a href="#yellow-300">300</a>
                 </div>
                 <div class="md-color__label__value">
                   #FFF176
@@ -2078,9 +2262,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FFEE58">
+              <a class="md-color__anchor" id="yellow-400"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  400
+                  <a href="#yellow-400">400</a>
                 </div>
                 <div class="md-color__label__value">
                   #FFEE58
@@ -2088,9 +2273,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FFEB3B">
+              <a class="md-color__anchor" id="yellow-500"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  500
+                  <a href="#yellow-500">500</a>
                 </div>
                 <div class="md-color__label__value">
                   #FFEB3B
@@ -2098,9 +2284,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FDD835">
+              <a class="md-color__anchor" id="yellow-600"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  600
+                  <a href="#yellow-600">600</a>
                 </div>
                 <div class="md-color__label__value">
                   #FDD835
@@ -2108,9 +2295,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FBC02D">
+              <a class="md-color__anchor" id="yellow-700"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  700
+                  <a href="#yellow-700">700</a>
                 </div>
                 <div class="md-color__label__value">
                   #FBC02D
@@ -2118,9 +2306,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #F9A825">
+              <a class="md-color__anchor" id="yellow-800"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  800
+                  <a href="#yellow-800">800</a>
                 </div>
                 <div class="md-color__label__value">
                   #F9A825
@@ -2128,9 +2317,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #F57F17">
+              <a class="md-color__anchor" id="yellow-900"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  900
+                  <a href="#yellow-900">900</a>
                 </div>
                 <div class="md-color__label__value">
                   #F57F17
@@ -2138,9 +2328,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FFFF8D">
+              <a class="md-color__anchor" id="yellow-a100"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a100
+                  <a href="#yellow-a100">a100</a>
                 </div>
                 <div class="md-color__label__value">
                   #FFFF8D
@@ -2148,9 +2339,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FFFF00">
+              <a class="md-color__anchor" id="yellow-a200"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a200
+                  <a href="#yellow-a200">a200</a>
                 </div>
                 <div class="md-color__label__value">
                   #FFFF00
@@ -2158,9 +2350,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FFEA00">
+              <a class="md-color__anchor" id="yellow-a400"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a400
+                  <a href="#yellow-a400">a400</a>
                 </div>
                 <div class="md-color__label__value">
                   #FFEA00
@@ -2168,9 +2361,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FFD600">
+              <a class="md-color__anchor" id="yellow-a700"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a700
+                  <a href="#yellow-a700">a700</a>
                 </div>
                 <div class="md-color__label__value">
                   #FFD600
@@ -2196,9 +2390,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FFF8E1">
+              <a class="md-color__anchor" id="amber-50"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  50
+                  <a href="#amber-50">50</a>
                 </div>
                 <div class="md-color__label__value">
                   #FFF8E1
@@ -2206,9 +2401,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FFECB3">
+              <a class="md-color__anchor" id="amber-100"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  100
+                  <a href="#amber-100">100</a>
                 </div>
                 <div class="md-color__label__value">
                   #FFECB3
@@ -2216,9 +2412,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FFE082">
+              <a class="md-color__anchor" id="amber-200"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  200
+                  <a href="#amber-200">200</a>
                 </div>
                 <div class="md-color__label__value">
                   #FFE082
@@ -2226,9 +2423,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FFD54F">
+              <a class="md-color__anchor" id="amber-300"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  300
+                  <a href="#amber-300">300</a>
                 </div>
                 <div class="md-color__label__value">
                   #FFD54F
@@ -2236,9 +2434,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FFCA28">
+              <a class="md-color__anchor" id="amber-400"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  400
+                  <a href="#amber-400">400</a>
                 </div>
                 <div class="md-color__label__value">
                   #FFCA28
@@ -2246,9 +2445,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FFC107">
+              <a class="md-color__anchor" id="amber-500"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  500
+                  <a href="#amber-500">500</a>
                 </div>
                 <div class="md-color__label__value">
                   #FFC107
@@ -2256,9 +2456,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FFB300">
+              <a class="md-color__anchor" id="amber-600"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  600
+                  <a href="#amber-600">600</a>
                 </div>
                 <div class="md-color__label__value">
                   #FFB300
@@ -2266,9 +2467,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FFA000">
+              <a class="md-color__anchor" id="amber-700"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  700
+                  <a href="#amber-700">700</a>
                 </div>
                 <div class="md-color__label__value">
                   #FFA000
@@ -2276,9 +2478,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FF8F00">
+              <a class="md-color__anchor" id="amber-800"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  800
+                  <a href="#amber-800">800</a>
                 </div>
                 <div class="md-color__label__value">
                   #FF8F00
@@ -2286,9 +2489,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FF6F00">
+              <a class="md-color__anchor" id="amber-900"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  900
+                  <a href="#amber-900">900</a>
                 </div>
                 <div class="md-color__label__value">
                   #FF6F00
@@ -2296,9 +2500,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FFE57F">
+              <a class="md-color__anchor" id="amber-a100"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a100
+                  <a href="#amber-a100">a100</a>
                 </div>
                 <div class="md-color__label__value">
                   #FFE57F
@@ -2306,9 +2511,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FFD740">
+              <a class="md-color__anchor" id="amber-a200"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a200
+                  <a href="#amber-a200">a200</a>
                 </div>
                 <div class="md-color__label__value">
                   #FFD740
@@ -2316,9 +2522,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FFC400">
+              <a class="md-color__anchor" id="amber-a400"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a400
+                  <a href="#amber-a400">a400</a>
                 </div>
                 <div class="md-color__label__value">
                   #FFC400
@@ -2326,9 +2533,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FFAB00">
+              <a class="md-color__anchor" id="amber-a700"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a700
+                  <a href="#amber-a700">a700</a>
                 </div>
                 <div class="md-color__label__value">
                   #FFAB00
@@ -2354,9 +2562,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FFF3E0">
+              <a class="md-color__anchor" id="orange-50"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  50
+                  <a href="#orange-50">50</a>
                 </div>
                 <div class="md-color__label__value">
                   #FFF3E0
@@ -2364,9 +2573,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FFE0B2">
+              <a class="md-color__anchor" id="orange-100"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  100
+                  <a href="#orange-100">100</a>
                 </div>
                 <div class="md-color__label__value">
                   #FFE0B2
@@ -2374,9 +2584,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FFCC80">
+              <a class="md-color__anchor" id="orange-200"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  200
+                  <a href="#orange-200">200</a>
                 </div>
                 <div class="md-color__label__value">
                   #FFCC80
@@ -2384,9 +2595,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FFB74D">
+              <a class="md-color__anchor" id="orange-300"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  300
+                  <a href="#orange-300">300</a>
                 </div>
                 <div class="md-color__label__value">
                   #FFB74D
@@ -2394,9 +2606,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FFA726">
+              <a class="md-color__anchor" id="orange-400"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  400
+                  <a href="#orange-400">400</a>
                 </div>
                 <div class="md-color__label__value">
                   #FFA726
@@ -2404,9 +2617,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FF9800">
+              <a class="md-color__anchor" id="orange-500"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  500
+                  <a href="#orange-500">500</a>
                 </div>
                 <div class="md-color__label__value">
                   #FF9800
@@ -2414,9 +2628,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FB8C00">
+              <a class="md-color__anchor" id="orange-600"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  600
+                  <a href="#orange-600">600</a>
                 </div>
                 <div class="md-color__label__value">
                   #FB8C00
@@ -2424,9 +2639,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #F57C00">
+              <a class="md-color__anchor" id="orange-700"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  700
+                  <a href="#orange-700">700</a>
                 </div>
                 <div class="md-color__label__value">
                   #F57C00
@@ -2434,9 +2650,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #EF6C00">
+              <a class="md-color__anchor" id="orange-800"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  800
+                  <a href="#orange-800">800</a>
                 </div>
                 <div class="md-color__label__value">
                   #EF6C00
@@ -2444,9 +2661,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #E65100">
+              <a class="md-color__anchor" id="orange-900"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  900
+                  <a href="#orange-900">900</a>
                 </div>
                 <div class="md-color__label__value">
                   #E65100
@@ -2454,9 +2672,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FFD180">
+              <a class="md-color__anchor" id="orange-a100"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a100
+                  <a href="#orange-a100">a100</a>
                 </div>
                 <div class="md-color__label__value">
                   #FFD180
@@ -2464,9 +2683,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FFAB40">
+              <a class="md-color__anchor" id="orange-a200"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a200
+                  <a href="#orange-a200">a200</a>
                 </div>
                 <div class="md-color__label__value">
                   #FFAB40
@@ -2474,9 +2694,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FF9100">
+              <a class="md-color__anchor" id="orange-a400"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a400
+                  <a href="#orange-a400">a400</a>
                 </div>
                 <div class="md-color__label__value">
                   #FF9100
@@ -2484,9 +2705,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FF6D00">
+              <a class="md-color__anchor" id="orange-a700"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a700
+                  <a href="#orange-a700">a700</a>
                 </div>
                 <div class="md-color__label__value">
                   #FF6D00
@@ -2512,9 +2734,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FBE9E7">
+              <a class="md-color__anchor" id="deep-orange-50"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  50
+                  <a href="#deep-orange-50">50</a>
                 </div>
                 <div class="md-color__label__value">
                   #FBE9E7
@@ -2522,9 +2745,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FFCCBC">
+              <a class="md-color__anchor" id="deep-orange-100"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  100
+                  <a href="#deep-orange-100">100</a>
                 </div>
                 <div class="md-color__label__value">
                   #FFCCBC
@@ -2532,9 +2756,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FFAB91">
+              <a class="md-color__anchor" id="deep-orange-200"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  200
+                  <a href="#deep-orange-200">200</a>
                 </div>
                 <div class="md-color__label__value">
                   #FFAB91
@@ -2542,9 +2767,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FF8A65">
+              <a class="md-color__anchor" id="deep-orange-300"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  300
+                  <a href="#deep-orange-300">300</a>
                 </div>
                 <div class="md-color__label__value">
                   #FF8A65
@@ -2552,9 +2778,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FF7043">
+              <a class="md-color__anchor" id="deep-orange-400"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  400
+                  <a href="#deep-orange-400">400</a>
                 </div>
                 <div class="md-color__label__value">
                   #FF7043
@@ -2562,9 +2789,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FF5722">
+              <a class="md-color__anchor" id="deep-orange-500"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  500
+                  <a href="#deep-orange-500">500</a>
                 </div>
                 <div class="md-color__label__value">
                   #FF5722
@@ -2572,9 +2800,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #F4511E">
+              <a class="md-color__anchor" id="deep-orange-600"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  600
+                  <a href="#deep-orange-600">600</a>
                 </div>
                 <div class="md-color__label__value">
                   #F4511E
@@ -2582,9 +2811,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #E64A19">
+              <a class="md-color__anchor" id="deep-orange-700"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  700
+                  <a href="#deep-orange-700">700</a>
                 </div>
                 <div class="md-color__label__value">
                   #E64A19
@@ -2592,9 +2822,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #D84315">
+              <a class="md-color__anchor" id="deep-orange-800"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  800
+                  <a href="#deep-orange-800">800</a>
                 </div>
                 <div class="md-color__label__value">
                   #D84315
@@ -2602,9 +2833,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #BF360C">
+              <a class="md-color__anchor" id="deep-orange-900"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  900
+                  <a href="#deep-orange-900">900</a>
                 </div>
                 <div class="md-color__label__value">
                   #BF360C
@@ -2612,9 +2844,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FF9E80">
+              <a class="md-color__anchor" id="deep-orange-a100"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a100
+                  <a href="#deep-orange-a100">a100</a>
                 </div>
                 <div class="md-color__label__value">
                   #FF9E80
@@ -2622,9 +2855,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FF6E40">
+              <a class="md-color__anchor" id="deep-orange-a200"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a200
+                  <a href="#deep-orange-a200">a200</a>
                 </div>
                 <div class="md-color__label__value">
                   #FF6E40
@@ -2632,9 +2866,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FF3D00">
+              <a class="md-color__anchor" id="deep-orange-a400"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a400
+                  <a href="#deep-orange-a400">a400</a>
                 </div>
                 <div class="md-color__label__value">
                   #FF3D00
@@ -2642,9 +2877,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #DD2C00">
+              <a class="md-color__anchor" id="deep-orange-a700"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  a700
+                  <a href="#deep-orange-a700">a700</a>
                 </div>
                 <div class="md-color__label__value">
                   #DD2C00
@@ -2670,9 +2906,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #EFEBE9">
+              <a class="md-color__anchor" id="brown-50"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  50
+                  <a href="#brown-50">50</a>
                 </div>
                 <div class="md-color__label__value">
                   #EFEBE9
@@ -2680,9 +2917,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #D7CCC8">
+              <a class="md-color__anchor" id="brown-100"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  100
+                  <a href="#brown-100">100</a>
                 </div>
                 <div class="md-color__label__value">
                   #D7CCC8
@@ -2690,9 +2928,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #BCAAA4">
+              <a class="md-color__anchor" id="brown-200"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  200
+                  <a href="#brown-200">200</a>
                 </div>
                 <div class="md-color__label__value">
                   #BCAAA4
@@ -2700,9 +2939,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #A1887F">
+              <a class="md-color__anchor" id="brown-300"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  300
+                  <a href="#brown-300">300</a>
                 </div>
                 <div class="md-color__label__value">
                   #A1887F
@@ -2710,9 +2950,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #8D6E63">
+              <a class="md-color__anchor" id="brown-400"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  400
+                  <a href="#brown-400">400</a>
                 </div>
                 <div class="md-color__label__value">
                   #8D6E63
@@ -2720,9 +2961,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #795548">
+              <a class="md-color__anchor" id="brown-500"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  500
+                  <a href="#brown-500">500</a>
                 </div>
                 <div class="md-color__label__value">
                   #795548
@@ -2730,9 +2972,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #6D4C41">
+              <a class="md-color__anchor" id="brown-600"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  600
+                  <a href="#brown-600">600</a>
                 </div>
                 <div class="md-color__label__value">
                   #6D4C41
@@ -2740,9 +2983,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #5D4037">
+              <a class="md-color__anchor" id="brown-700"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  700
+                  <a href="#brown-700">700</a>
                 </div>
                 <div class="md-color__label__value">
                   #5D4037
@@ -2750,9 +2994,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #4E342E">
+              <a class="md-color__anchor" id="brown-800"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  800
+                  <a href="#brown-800">800</a>
                 </div>
                 <div class="md-color__label__value">
                   #4E342E
@@ -2760,9 +3005,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #3E2723">
+              <a class="md-color__anchor" id="brown-900"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  900
+                  <a href="#brown-900">900</a>
                 </div>
                 <div class="md-color__label__value">
                   #3E2723
@@ -2788,9 +3034,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #FAFAFA">
+              <a class="md-color__anchor" id="grey-50"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  50
+                  <a href="#grey-50">50</a>
                 </div>
                 <div class="md-color__label__value">
                   #FAFAFA
@@ -2798,9 +3045,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #F5F5F5">
+              <a class="md-color__anchor" id="grey-100"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  100
+                  <a href="#grey-100">100</a>
                 </div>
                 <div class="md-color__label__value">
                   #F5F5F5
@@ -2808,9 +3056,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #EEEEEE">
+              <a class="md-color__anchor" id="grey-200"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  200
+                  <a href="#grey-200">200</a>
                 </div>
                 <div class="md-color__label__value">
                   #EEEEEE
@@ -2818,9 +3067,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #E0E0E0">
+              <a class="md-color__anchor" id="grey-300"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  300
+                  <a href="#grey-300">300</a>
                 </div>
                 <div class="md-color__label__value">
                   #E0E0E0
@@ -2828,9 +3078,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #BDBDBD">
+              <a class="md-color__anchor" id="grey-400"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  400
+                  <a href="#grey-400">400</a>
                 </div>
                 <div class="md-color__label__value">
                   #BDBDBD
@@ -2838,9 +3089,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #9E9E9E">
+              <a class="md-color__anchor" id="grey-500"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  500
+                  <a href="#grey-500">500</a>
                 </div>
                 <div class="md-color__label__value">
                   #9E9E9E
@@ -2848,9 +3100,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #757575">
+              <a class="md-color__anchor" id="grey-600"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  600
+                  <a href="#grey-600">600</a>
                 </div>
                 <div class="md-color__label__value">
                   #757575
@@ -2858,9 +3111,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #616161">
+              <a class="md-color__anchor" id="grey-700"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  700
+                  <a href="#grey-700">700</a>
                 </div>
                 <div class="md-color__label__value">
                   #616161
@@ -2868,9 +3122,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #424242">
+              <a class="md-color__anchor" id="grey-800"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  800
+                  <a href="#grey-800">800</a>
                 </div>
                 <div class="md-color__label__value">
                   #424242
@@ -2878,9 +3133,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #212121">
+              <a class="md-color__anchor" id="grey-900"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  900
+                  <a href="#grey-900">900</a>
                 </div>
                 <div class="md-color__label__value">
                   #212121
@@ -2906,9 +3162,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #ECEFF1">
+              <a class="md-color__anchor" id="blue-grey-50"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  50
+                  <a href="#blue-grey-50">50</a>
                 </div>
                 <div class="md-color__label__value">
                   #ECEFF1
@@ -2916,9 +3173,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #CFD8DC">
+              <a class="md-color__anchor" id="blue-grey-100"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  100
+                  <a href="#blue-grey-100">100</a>
                 </div>
                 <div class="md-color__label__value">
                   #CFD8DC
@@ -2926,9 +3184,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #B0BEC5">
+              <a class="md-color__anchor" id="blue-grey-200"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  200
+                  <a href="#blue-grey-200">200</a>
                 </div>
                 <div class="md-color__label__value">
                   #B0BEC5
@@ -2936,9 +3195,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #90A4AE">
+              <a class="md-color__anchor" id="blue-grey-300"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  300
+                  <a href="#blue-grey-300">300</a>
                 </div>
                 <div class="md-color__label__value">
                   #90A4AE
@@ -2946,9 +3206,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #78909C">
+              <a class="md-color__anchor" id="blue-grey-400"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  400
+                  <a href="#blue-grey-400">400</a>
                 </div>
                 <div class="md-color__label__value">
                   #78909C
@@ -2956,9 +3217,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #607D8B">
+              <a class="md-color__anchor" id="blue-grey-500"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  500
+                  <a href="#blue-grey-500">500</a>
                 </div>
                 <div class="md-color__label__value">
                   #607D8B
@@ -2966,9 +3228,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #546E7A">
+              <a class="md-color__anchor" id="blue-grey-600"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  600
+                  <a href="#blue-grey-600">600</a>
                 </div>
                 <div class="md-color__label__value">
                   #546E7A
@@ -2976,9 +3239,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #455A64">
+              <a class="md-color__anchor" id="blue-grey-700"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  700
+                  <a href="#blue-grey-700">700</a>
                 </div>
                 <div class="md-color__label__value">
                   #455A64
@@ -2986,9 +3250,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #37474F">
+              <a class="md-color__anchor" id="blue-grey-800"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  800
+                  <a href="#blue-grey-800">800</a>
                 </div>
                 <div class="md-color__label__value">
                   #37474F
@@ -2996,9 +3261,10 @@ footer {
               </div>
             </li>
             <li class="md-color" style="background: #263238">
+              <a class="md-color__anchor" id="blue-grey-900"></a>
               <div class="md-color__label">
                 <div class="md-color__label__name">
-                  900
+                  <a href="#blue-grey-900">900</a>
                 </div>
                 <div class="md-color__label__value">
                   #263238
