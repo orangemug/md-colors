@@ -1,0 +1,3018 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>md-colors</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500" rel="stylesheet">
+    <style>
+      .--constrain {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+body {
+  margin: 0;
+  font-family: &#x27;Fira Sans&#x27;;
+}
+
+h1, h2, h3 {
+  font-family: &#x27;Fira Sans&#x27;;
+  font-weight: 500;
+  line-height: 1;
+}
+
+header {
+  padding: 18px;
+  background: black;
+  color: white;
+}
+
+header h1 {
+  margin-bottom: 0.1em;
+}
+
+header p {
+  margin-top: 0;
+}
+
+.color-palletes {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.6em;
+}
+
+.color-pallete {
+  flex: 1 0 340px;
+  padding: 0.6em;
+  border-bottom: solid 1px #ddd;
+}
+
+.color-pallete--empty {
+  padding-bottom: 0;
+  padding-top: 0;
+  border-bottom: none;
+  order: 999999;
+}
+
+.color-pallete ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.md-color {
+  padding: 12px;
+}
+
+.md-color--title {
+  margin-bottom: 4px;
+}
+
+.md-color__name {
+  margin-bottom: 48px;
+}
+
+.md-color__label {
+  position: relative;
+  overflow: hidden;
+}
+
+.md-color__label__name {
+  float: left;
+}
+
+.md-color__label__value {
+  float: right;
+}
+
+.readme {
+  padding: 1em;
+}
+
+a {
+  color: currentColor;
+}
+
+footer {
+  padding: 1em;
+  margin-top: 3em;
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
+    </style>
+  </head>
+  <body>
+
+    <header>
+      <div class="--constrain">
+        <h1>md-colors</h1>
+        <p>
+          Material design colors as an npm module
+        </p>
+      </div>
+    </header>
+
+    <div class="readme">
+      <div class="--constrain">
+        <p>
+          See usage at <a href="https://github.com/orangemug/md-colors" >orangemug/md-colors</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="color-palletes --constrain">
+        <div class="color-pallete color-pallete--empty"></div>
+        <div class="color-pallete">
+          <ul>
+            <li class="md-color md-color--title" style="background: #F44336">
+              <div class="md-color__name">
+                red
+              </div>
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  500
+                </div>
+                <div class="md-color__label__value">
+                  #F44336
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FFEBEE">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  50
+                </div>
+                <div class="md-color__label__value">
+                  #FFEBEE
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FFCDD2">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  100
+                </div>
+                <div class="md-color__label__value">
+                  #FFCDD2
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #EF9A9A">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  200
+                </div>
+                <div class="md-color__label__value">
+                  #EF9A9A
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #E57373">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  300
+                </div>
+                <div class="md-color__label__value">
+                  #E57373
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #EF5350">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  400
+                </div>
+                <div class="md-color__label__value">
+                  #EF5350
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #F44336">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  500
+                </div>
+                <div class="md-color__label__value">
+                  #F44336
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #E53935">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  600
+                </div>
+                <div class="md-color__label__value">
+                  #E53935
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #D32F2F">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  700
+                </div>
+                <div class="md-color__label__value">
+                  #D32F2F
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #C62828">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  800
+                </div>
+                <div class="md-color__label__value">
+                  #C62828
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #B71C1C">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  900
+                </div>
+                <div class="md-color__label__value">
+                  #B71C1C
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FF8A80">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a100
+                </div>
+                <div class="md-color__label__value">
+                  #FF8A80
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FF5252">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a200
+                </div>
+                <div class="md-color__label__value">
+                  #FF5252
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FF1744">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a400
+                </div>
+                <div class="md-color__label__value">
+                  #FF1744
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #D50000">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a700
+                </div>
+                <div class="md-color__label__value">
+                  #D50000
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="color-pallete color-pallete--empty"></div>
+        <div class="color-pallete">
+          <ul>
+            <li class="md-color md-color--title" style="background: #E91E63">
+              <div class="md-color__name">
+                pink
+              </div>
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  500
+                </div>
+                <div class="md-color__label__value">
+                  #E91E63
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FCE4EC">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  50
+                </div>
+                <div class="md-color__label__value">
+                  #FCE4EC
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #F8BBD0">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  100
+                </div>
+                <div class="md-color__label__value">
+                  #F8BBD0
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #F48FB1">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  200
+                </div>
+                <div class="md-color__label__value">
+                  #F48FB1
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #F06292">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  300
+                </div>
+                <div class="md-color__label__value">
+                  #F06292
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #EC407A">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  400
+                </div>
+                <div class="md-color__label__value">
+                  #EC407A
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #E91E63">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  500
+                </div>
+                <div class="md-color__label__value">
+                  #E91E63
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #D81B60">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  600
+                </div>
+                <div class="md-color__label__value">
+                  #D81B60
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #C2185B">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  700
+                </div>
+                <div class="md-color__label__value">
+                  #C2185B
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #AD1457">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  800
+                </div>
+                <div class="md-color__label__value">
+                  #AD1457
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #880E4F">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  900
+                </div>
+                <div class="md-color__label__value">
+                  #880E4F
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FF80AB">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a100
+                </div>
+                <div class="md-color__label__value">
+                  #FF80AB
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FF4081">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a200
+                </div>
+                <div class="md-color__label__value">
+                  #FF4081
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #F50057">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a400
+                </div>
+                <div class="md-color__label__value">
+                  #F50057
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #C51162">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a700
+                </div>
+                <div class="md-color__label__value">
+                  #C51162
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="color-pallete color-pallete--empty"></div>
+        <div class="color-pallete">
+          <ul>
+            <li class="md-color md-color--title" style="background: #9C27B0">
+              <div class="md-color__name">
+                purple
+              </div>
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  500
+                </div>
+                <div class="md-color__label__value">
+                  #9C27B0
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #F3E5F5">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  50
+                </div>
+                <div class="md-color__label__value">
+                  #F3E5F5
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #E1BEE7">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  100
+                </div>
+                <div class="md-color__label__value">
+                  #E1BEE7
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #CE93D8">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  200
+                </div>
+                <div class="md-color__label__value">
+                  #CE93D8
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #BA68C8">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  300
+                </div>
+                <div class="md-color__label__value">
+                  #BA68C8
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #AB47BC">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  400
+                </div>
+                <div class="md-color__label__value">
+                  #AB47BC
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #9C27B0">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  500
+                </div>
+                <div class="md-color__label__value">
+                  #9C27B0
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #8E24AA">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  600
+                </div>
+                <div class="md-color__label__value">
+                  #8E24AA
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #7B1FA2">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  700
+                </div>
+                <div class="md-color__label__value">
+                  #7B1FA2
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #6A1B9A">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  800
+                </div>
+                <div class="md-color__label__value">
+                  #6A1B9A
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #4A148C">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  900
+                </div>
+                <div class="md-color__label__value">
+                  #4A148C
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #EA80FC">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a100
+                </div>
+                <div class="md-color__label__value">
+                  #EA80FC
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #E040FB">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a200
+                </div>
+                <div class="md-color__label__value">
+                  #E040FB
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #D500F9">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a400
+                </div>
+                <div class="md-color__label__value">
+                  #D500F9
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #AA00FF">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a700
+                </div>
+                <div class="md-color__label__value">
+                  #AA00FF
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="color-pallete color-pallete--empty"></div>
+        <div class="color-pallete">
+          <ul>
+            <li class="md-color md-color--title" style="background: #673AB7">
+              <div class="md-color__name">
+                deep-purple
+              </div>
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  500
+                </div>
+                <div class="md-color__label__value">
+                  #673AB7
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #EDE7F6">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  50
+                </div>
+                <div class="md-color__label__value">
+                  #EDE7F6
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #D1C4E9">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  100
+                </div>
+                <div class="md-color__label__value">
+                  #D1C4E9
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #B39DDB">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  200
+                </div>
+                <div class="md-color__label__value">
+                  #B39DDB
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #9575CD">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  300
+                </div>
+                <div class="md-color__label__value">
+                  #9575CD
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #7E57C2">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  400
+                </div>
+                <div class="md-color__label__value">
+                  #7E57C2
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #673AB7">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  500
+                </div>
+                <div class="md-color__label__value">
+                  #673AB7
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #5E35B1">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  600
+                </div>
+                <div class="md-color__label__value">
+                  #5E35B1
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #512DA8">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  700
+                </div>
+                <div class="md-color__label__value">
+                  #512DA8
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #4527A0">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  800
+                </div>
+                <div class="md-color__label__value">
+                  #4527A0
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #311B92">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  900
+                </div>
+                <div class="md-color__label__value">
+                  #311B92
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #B388FF">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a100
+                </div>
+                <div class="md-color__label__value">
+                  #B388FF
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #7C4DFF">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a200
+                </div>
+                <div class="md-color__label__value">
+                  #7C4DFF
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #651FFF">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a400
+                </div>
+                <div class="md-color__label__value">
+                  #651FFF
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #6200EA">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a700
+                </div>
+                <div class="md-color__label__value">
+                  #6200EA
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="color-pallete color-pallete--empty"></div>
+        <div class="color-pallete">
+          <ul>
+            <li class="md-color md-color--title" style="background: #3F51B5">
+              <div class="md-color__name">
+                indigo
+              </div>
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  500
+                </div>
+                <div class="md-color__label__value">
+                  #3F51B5
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #E8EAF6">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  50
+                </div>
+                <div class="md-color__label__value">
+                  #E8EAF6
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #C5CAE9">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  100
+                </div>
+                <div class="md-color__label__value">
+                  #C5CAE9
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #9FA8DA">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  200
+                </div>
+                <div class="md-color__label__value">
+                  #9FA8DA
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #7986CB">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  300
+                </div>
+                <div class="md-color__label__value">
+                  #7986CB
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #5C6BC0">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  400
+                </div>
+                <div class="md-color__label__value">
+                  #5C6BC0
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #3F51B5">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  500
+                </div>
+                <div class="md-color__label__value">
+                  #3F51B5
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #3949AB">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  600
+                </div>
+                <div class="md-color__label__value">
+                  #3949AB
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #303F9F">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  700
+                </div>
+                <div class="md-color__label__value">
+                  #303F9F
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #283593">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  800
+                </div>
+                <div class="md-color__label__value">
+                  #283593
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #1A237E">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  900
+                </div>
+                <div class="md-color__label__value">
+                  #1A237E
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #8C9EFF">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a100
+                </div>
+                <div class="md-color__label__value">
+                  #8C9EFF
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #536DFE">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a200
+                </div>
+                <div class="md-color__label__value">
+                  #536DFE
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #3D5AFE">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a400
+                </div>
+                <div class="md-color__label__value">
+                  #3D5AFE
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #304FFE">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a700
+                </div>
+                <div class="md-color__label__value">
+                  #304FFE
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="color-pallete color-pallete--empty"></div>
+        <div class="color-pallete">
+          <ul>
+            <li class="md-color md-color--title" style="background: #2196F3">
+              <div class="md-color__name">
+                blue
+              </div>
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  500
+                </div>
+                <div class="md-color__label__value">
+                  #2196F3
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #E3F2FD">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  50
+                </div>
+                <div class="md-color__label__value">
+                  #E3F2FD
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #BBDEFB">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  100
+                </div>
+                <div class="md-color__label__value">
+                  #BBDEFB
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #90CAF9">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  200
+                </div>
+                <div class="md-color__label__value">
+                  #90CAF9
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #64B5F6">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  300
+                </div>
+                <div class="md-color__label__value">
+                  #64B5F6
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #42A5F5">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  400
+                </div>
+                <div class="md-color__label__value">
+                  #42A5F5
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #2196F3">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  500
+                </div>
+                <div class="md-color__label__value">
+                  #2196F3
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #1E88E5">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  600
+                </div>
+                <div class="md-color__label__value">
+                  #1E88E5
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #1976D2">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  700
+                </div>
+                <div class="md-color__label__value">
+                  #1976D2
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #1565C0">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  800
+                </div>
+                <div class="md-color__label__value">
+                  #1565C0
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #0D47A1">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  900
+                </div>
+                <div class="md-color__label__value">
+                  #0D47A1
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #82B1FF">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a100
+                </div>
+                <div class="md-color__label__value">
+                  #82B1FF
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #448AFF">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a200
+                </div>
+                <div class="md-color__label__value">
+                  #448AFF
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #2979FF">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a400
+                </div>
+                <div class="md-color__label__value">
+                  #2979FF
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #2962FF">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a700
+                </div>
+                <div class="md-color__label__value">
+                  #2962FF
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="color-pallete color-pallete--empty"></div>
+        <div class="color-pallete">
+          <ul>
+            <li class="md-color md-color--title" style="background: #03A9F4">
+              <div class="md-color__name">
+                light-blue
+              </div>
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  500
+                </div>
+                <div class="md-color__label__value">
+                  #03A9F4
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #E1F5FE">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  50
+                </div>
+                <div class="md-color__label__value">
+                  #E1F5FE
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #B3E5FC">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  100
+                </div>
+                <div class="md-color__label__value">
+                  #B3E5FC
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #81D4FA">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  200
+                </div>
+                <div class="md-color__label__value">
+                  #81D4FA
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #4FC3F7">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  300
+                </div>
+                <div class="md-color__label__value">
+                  #4FC3F7
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #29B6F6">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  400
+                </div>
+                <div class="md-color__label__value">
+                  #29B6F6
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #03A9F4">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  500
+                </div>
+                <div class="md-color__label__value">
+                  #03A9F4
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #039BE5">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  600
+                </div>
+                <div class="md-color__label__value">
+                  #039BE5
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #0288D1">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  700
+                </div>
+                <div class="md-color__label__value">
+                  #0288D1
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #0277BD">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  800
+                </div>
+                <div class="md-color__label__value">
+                  #0277BD
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #01579B">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  900
+                </div>
+                <div class="md-color__label__value">
+                  #01579B
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #80D8FF">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a100
+                </div>
+                <div class="md-color__label__value">
+                  #80D8FF
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #40C4FF">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a200
+                </div>
+                <div class="md-color__label__value">
+                  #40C4FF
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #00B0FF">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a400
+                </div>
+                <div class="md-color__label__value">
+                  #00B0FF
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #0091EA">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a700
+                </div>
+                <div class="md-color__label__value">
+                  #0091EA
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="color-pallete color-pallete--empty"></div>
+        <div class="color-pallete">
+          <ul>
+            <li class="md-color md-color--title" style="background: #00BCD4">
+              <div class="md-color__name">
+                cyan
+              </div>
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  500
+                </div>
+                <div class="md-color__label__value">
+                  #00BCD4
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #E0F7FA">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  50
+                </div>
+                <div class="md-color__label__value">
+                  #E0F7FA
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #B2EBF2">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  100
+                </div>
+                <div class="md-color__label__value">
+                  #B2EBF2
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #80DEEA">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  200
+                </div>
+                <div class="md-color__label__value">
+                  #80DEEA
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #4DD0E1">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  300
+                </div>
+                <div class="md-color__label__value">
+                  #4DD0E1
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #26C6DA">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  400
+                </div>
+                <div class="md-color__label__value">
+                  #26C6DA
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #00BCD4">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  500
+                </div>
+                <div class="md-color__label__value">
+                  #00BCD4
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #00ACC1">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  600
+                </div>
+                <div class="md-color__label__value">
+                  #00ACC1
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #0097A7">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  700
+                </div>
+                <div class="md-color__label__value">
+                  #0097A7
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #00838F">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  800
+                </div>
+                <div class="md-color__label__value">
+                  #00838F
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #006064">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  900
+                </div>
+                <div class="md-color__label__value">
+                  #006064
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #84FFFF">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a100
+                </div>
+                <div class="md-color__label__value">
+                  #84FFFF
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #18FFFF">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a200
+                </div>
+                <div class="md-color__label__value">
+                  #18FFFF
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #00E5FF">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a400
+                </div>
+                <div class="md-color__label__value">
+                  #00E5FF
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #00B8D4">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a700
+                </div>
+                <div class="md-color__label__value">
+                  #00B8D4
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="color-pallete color-pallete--empty"></div>
+        <div class="color-pallete">
+          <ul>
+            <li class="md-color md-color--title" style="background: #009688">
+              <div class="md-color__name">
+                teal
+              </div>
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  500
+                </div>
+                <div class="md-color__label__value">
+                  #009688
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #E0F2F1">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  50
+                </div>
+                <div class="md-color__label__value">
+                  #E0F2F1
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #B2DFDB">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  100
+                </div>
+                <div class="md-color__label__value">
+                  #B2DFDB
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #80CBC4">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  200
+                </div>
+                <div class="md-color__label__value">
+                  #80CBC4
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #4DB6AC">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  300
+                </div>
+                <div class="md-color__label__value">
+                  #4DB6AC
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #26A69A">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  400
+                </div>
+                <div class="md-color__label__value">
+                  #26A69A
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #009688">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  500
+                </div>
+                <div class="md-color__label__value">
+                  #009688
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #00897B">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  600
+                </div>
+                <div class="md-color__label__value">
+                  #00897B
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #00796B">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  700
+                </div>
+                <div class="md-color__label__value">
+                  #00796B
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #00695C">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  800
+                </div>
+                <div class="md-color__label__value">
+                  #00695C
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #004D40">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  900
+                </div>
+                <div class="md-color__label__value">
+                  #004D40
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #A7FFEB">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a100
+                </div>
+                <div class="md-color__label__value">
+                  #A7FFEB
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #64FFDA">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a200
+                </div>
+                <div class="md-color__label__value">
+                  #64FFDA
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #1DE9B6">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a400
+                </div>
+                <div class="md-color__label__value">
+                  #1DE9B6
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #00BFA5">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a700
+                </div>
+                <div class="md-color__label__value">
+                  #00BFA5
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="color-pallete color-pallete--empty"></div>
+        <div class="color-pallete">
+          <ul>
+            <li class="md-color md-color--title" style="background: #4CAF50">
+              <div class="md-color__name">
+                green
+              </div>
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  500
+                </div>
+                <div class="md-color__label__value">
+                  #4CAF50
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #E8F5E9">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  50
+                </div>
+                <div class="md-color__label__value">
+                  #E8F5E9
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #C8E6C9">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  100
+                </div>
+                <div class="md-color__label__value">
+                  #C8E6C9
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #A5D6A7">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  200
+                </div>
+                <div class="md-color__label__value">
+                  #A5D6A7
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #81C784">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  300
+                </div>
+                <div class="md-color__label__value">
+                  #81C784
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #66BB6A">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  400
+                </div>
+                <div class="md-color__label__value">
+                  #66BB6A
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #4CAF50">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  500
+                </div>
+                <div class="md-color__label__value">
+                  #4CAF50
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #43A047">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  600
+                </div>
+                <div class="md-color__label__value">
+                  #43A047
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #388E3C">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  700
+                </div>
+                <div class="md-color__label__value">
+                  #388E3C
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #2E7D32">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  800
+                </div>
+                <div class="md-color__label__value">
+                  #2E7D32
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #1B5E20">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  900
+                </div>
+                <div class="md-color__label__value">
+                  #1B5E20
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #B9F6CA">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a100
+                </div>
+                <div class="md-color__label__value">
+                  #B9F6CA
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #69F0AE">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a200
+                </div>
+                <div class="md-color__label__value">
+                  #69F0AE
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #00E676">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a400
+                </div>
+                <div class="md-color__label__value">
+                  #00E676
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #00C853">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a700
+                </div>
+                <div class="md-color__label__value">
+                  #00C853
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="color-pallete color-pallete--empty"></div>
+        <div class="color-pallete">
+          <ul>
+            <li class="md-color md-color--title" style="background: #8BC34A">
+              <div class="md-color__name">
+                light-green
+              </div>
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  500
+                </div>
+                <div class="md-color__label__value">
+                  #8BC34A
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #F1F8E9">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  50
+                </div>
+                <div class="md-color__label__value">
+                  #F1F8E9
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #DCEDC8">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  100
+                </div>
+                <div class="md-color__label__value">
+                  #DCEDC8
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #C5E1A5">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  200
+                </div>
+                <div class="md-color__label__value">
+                  #C5E1A5
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #AED581">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  300
+                </div>
+                <div class="md-color__label__value">
+                  #AED581
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #9CCC65">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  400
+                </div>
+                <div class="md-color__label__value">
+                  #9CCC65
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #8BC34A">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  500
+                </div>
+                <div class="md-color__label__value">
+                  #8BC34A
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #7CB342">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  600
+                </div>
+                <div class="md-color__label__value">
+                  #7CB342
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #689F38">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  700
+                </div>
+                <div class="md-color__label__value">
+                  #689F38
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #558B2F">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  800
+                </div>
+                <div class="md-color__label__value">
+                  #558B2F
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #33691E">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  900
+                </div>
+                <div class="md-color__label__value">
+                  #33691E
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #CCFF90">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a100
+                </div>
+                <div class="md-color__label__value">
+                  #CCFF90
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #B2FF59">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a200
+                </div>
+                <div class="md-color__label__value">
+                  #B2FF59
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #76FF03">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a400
+                </div>
+                <div class="md-color__label__value">
+                  #76FF03
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #64DD17">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a700
+                </div>
+                <div class="md-color__label__value">
+                  #64DD17
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="color-pallete color-pallete--empty"></div>
+        <div class="color-pallete">
+          <ul>
+            <li class="md-color md-color--title" style="background: #CDDC39">
+              <div class="md-color__name">
+                lime
+              </div>
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  500
+                </div>
+                <div class="md-color__label__value">
+                  #CDDC39
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #F9FBE7">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  50
+                </div>
+                <div class="md-color__label__value">
+                  #F9FBE7
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #F0F4C3">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  100
+                </div>
+                <div class="md-color__label__value">
+                  #F0F4C3
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #E6EE9C">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  200
+                </div>
+                <div class="md-color__label__value">
+                  #E6EE9C
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #DCE775">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  300
+                </div>
+                <div class="md-color__label__value">
+                  #DCE775
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #D4E157">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  400
+                </div>
+                <div class="md-color__label__value">
+                  #D4E157
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #CDDC39">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  500
+                </div>
+                <div class="md-color__label__value">
+                  #CDDC39
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #C0CA33">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  600
+                </div>
+                <div class="md-color__label__value">
+                  #C0CA33
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #AFB42B">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  700
+                </div>
+                <div class="md-color__label__value">
+                  #AFB42B
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #9E9D24">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  800
+                </div>
+                <div class="md-color__label__value">
+                  #9E9D24
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #827717">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  900
+                </div>
+                <div class="md-color__label__value">
+                  #827717
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #F4FF81">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a100
+                </div>
+                <div class="md-color__label__value">
+                  #F4FF81
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #EEFF41">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a200
+                </div>
+                <div class="md-color__label__value">
+                  #EEFF41
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #C6FF00">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a400
+                </div>
+                <div class="md-color__label__value">
+                  #C6FF00
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #AEEA00">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a700
+                </div>
+                <div class="md-color__label__value">
+                  #AEEA00
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="color-pallete color-pallete--empty"></div>
+        <div class="color-pallete">
+          <ul>
+            <li class="md-color md-color--title" style="background: #FFEB3B">
+              <div class="md-color__name">
+                yellow
+              </div>
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  500
+                </div>
+                <div class="md-color__label__value">
+                  #FFEB3B
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FFFDE7">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  50
+                </div>
+                <div class="md-color__label__value">
+                  #FFFDE7
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FFF9C4">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  100
+                </div>
+                <div class="md-color__label__value">
+                  #FFF9C4
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FFF59D">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  200
+                </div>
+                <div class="md-color__label__value">
+                  #FFF59D
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FFF176">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  300
+                </div>
+                <div class="md-color__label__value">
+                  #FFF176
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FFEE58">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  400
+                </div>
+                <div class="md-color__label__value">
+                  #FFEE58
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FFEB3B">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  500
+                </div>
+                <div class="md-color__label__value">
+                  #FFEB3B
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FDD835">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  600
+                </div>
+                <div class="md-color__label__value">
+                  #FDD835
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FBC02D">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  700
+                </div>
+                <div class="md-color__label__value">
+                  #FBC02D
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #F9A825">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  800
+                </div>
+                <div class="md-color__label__value">
+                  #F9A825
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #F57F17">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  900
+                </div>
+                <div class="md-color__label__value">
+                  #F57F17
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FFFF8D">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a100
+                </div>
+                <div class="md-color__label__value">
+                  #FFFF8D
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FFFF00">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a200
+                </div>
+                <div class="md-color__label__value">
+                  #FFFF00
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FFEA00">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a400
+                </div>
+                <div class="md-color__label__value">
+                  #FFEA00
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FFD600">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a700
+                </div>
+                <div class="md-color__label__value">
+                  #FFD600
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="color-pallete color-pallete--empty"></div>
+        <div class="color-pallete">
+          <ul>
+            <li class="md-color md-color--title" style="background: #FFC107">
+              <div class="md-color__name">
+                amber
+              </div>
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  500
+                </div>
+                <div class="md-color__label__value">
+                  #FFC107
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FFF8E1">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  50
+                </div>
+                <div class="md-color__label__value">
+                  #FFF8E1
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FFECB3">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  100
+                </div>
+                <div class="md-color__label__value">
+                  #FFECB3
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FFE082">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  200
+                </div>
+                <div class="md-color__label__value">
+                  #FFE082
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FFD54F">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  300
+                </div>
+                <div class="md-color__label__value">
+                  #FFD54F
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FFCA28">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  400
+                </div>
+                <div class="md-color__label__value">
+                  #FFCA28
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FFC107">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  500
+                </div>
+                <div class="md-color__label__value">
+                  #FFC107
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FFB300">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  600
+                </div>
+                <div class="md-color__label__value">
+                  #FFB300
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FFA000">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  700
+                </div>
+                <div class="md-color__label__value">
+                  #FFA000
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FF8F00">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  800
+                </div>
+                <div class="md-color__label__value">
+                  #FF8F00
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FF6F00">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  900
+                </div>
+                <div class="md-color__label__value">
+                  #FF6F00
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FFE57F">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a100
+                </div>
+                <div class="md-color__label__value">
+                  #FFE57F
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FFD740">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a200
+                </div>
+                <div class="md-color__label__value">
+                  #FFD740
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FFC400">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a400
+                </div>
+                <div class="md-color__label__value">
+                  #FFC400
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FFAB00">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a700
+                </div>
+                <div class="md-color__label__value">
+                  #FFAB00
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="color-pallete color-pallete--empty"></div>
+        <div class="color-pallete">
+          <ul>
+            <li class="md-color md-color--title" style="background: #FF9800">
+              <div class="md-color__name">
+                orange
+              </div>
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  500
+                </div>
+                <div class="md-color__label__value">
+                  #FF9800
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FFF3E0">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  50
+                </div>
+                <div class="md-color__label__value">
+                  #FFF3E0
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FFE0B2">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  100
+                </div>
+                <div class="md-color__label__value">
+                  #FFE0B2
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FFCC80">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  200
+                </div>
+                <div class="md-color__label__value">
+                  #FFCC80
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FFB74D">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  300
+                </div>
+                <div class="md-color__label__value">
+                  #FFB74D
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FFA726">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  400
+                </div>
+                <div class="md-color__label__value">
+                  #FFA726
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FF9800">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  500
+                </div>
+                <div class="md-color__label__value">
+                  #FF9800
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FB8C00">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  600
+                </div>
+                <div class="md-color__label__value">
+                  #FB8C00
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #F57C00">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  700
+                </div>
+                <div class="md-color__label__value">
+                  #F57C00
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #EF6C00">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  800
+                </div>
+                <div class="md-color__label__value">
+                  #EF6C00
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #E65100">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  900
+                </div>
+                <div class="md-color__label__value">
+                  #E65100
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FFD180">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a100
+                </div>
+                <div class="md-color__label__value">
+                  #FFD180
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FFAB40">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a200
+                </div>
+                <div class="md-color__label__value">
+                  #FFAB40
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FF9100">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a400
+                </div>
+                <div class="md-color__label__value">
+                  #FF9100
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FF6D00">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a700
+                </div>
+                <div class="md-color__label__value">
+                  #FF6D00
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="color-pallete color-pallete--empty"></div>
+        <div class="color-pallete">
+          <ul>
+            <li class="md-color md-color--title" style="background: #FF5722">
+              <div class="md-color__name">
+                deep-orange
+              </div>
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  500
+                </div>
+                <div class="md-color__label__value">
+                  #FF5722
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FBE9E7">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  50
+                </div>
+                <div class="md-color__label__value">
+                  #FBE9E7
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FFCCBC">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  100
+                </div>
+                <div class="md-color__label__value">
+                  #FFCCBC
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FFAB91">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  200
+                </div>
+                <div class="md-color__label__value">
+                  #FFAB91
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FF8A65">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  300
+                </div>
+                <div class="md-color__label__value">
+                  #FF8A65
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FF7043">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  400
+                </div>
+                <div class="md-color__label__value">
+                  #FF7043
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FF5722">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  500
+                </div>
+                <div class="md-color__label__value">
+                  #FF5722
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #F4511E">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  600
+                </div>
+                <div class="md-color__label__value">
+                  #F4511E
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #E64A19">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  700
+                </div>
+                <div class="md-color__label__value">
+                  #E64A19
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #D84315">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  800
+                </div>
+                <div class="md-color__label__value">
+                  #D84315
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #BF360C">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  900
+                </div>
+                <div class="md-color__label__value">
+                  #BF360C
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FF9E80">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a100
+                </div>
+                <div class="md-color__label__value">
+                  #FF9E80
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FF6E40">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a200
+                </div>
+                <div class="md-color__label__value">
+                  #FF6E40
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FF3D00">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a400
+                </div>
+                <div class="md-color__label__value">
+                  #FF3D00
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #DD2C00">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  a700
+                </div>
+                <div class="md-color__label__value">
+                  #DD2C00
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="color-pallete color-pallete--empty"></div>
+        <div class="color-pallete">
+          <ul>
+            <li class="md-color md-color--title" style="background: #795548">
+              <div class="md-color__name">
+                brown
+              </div>
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  500
+                </div>
+                <div class="md-color__label__value">
+                  #795548
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #EFEBE9">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  50
+                </div>
+                <div class="md-color__label__value">
+                  #EFEBE9
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #D7CCC8">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  100
+                </div>
+                <div class="md-color__label__value">
+                  #D7CCC8
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #BCAAA4">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  200
+                </div>
+                <div class="md-color__label__value">
+                  #BCAAA4
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #A1887F">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  300
+                </div>
+                <div class="md-color__label__value">
+                  #A1887F
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #8D6E63">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  400
+                </div>
+                <div class="md-color__label__value">
+                  #8D6E63
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #795548">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  500
+                </div>
+                <div class="md-color__label__value">
+                  #795548
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #6D4C41">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  600
+                </div>
+                <div class="md-color__label__value">
+                  #6D4C41
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #5D4037">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  700
+                </div>
+                <div class="md-color__label__value">
+                  #5D4037
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #4E342E">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  800
+                </div>
+                <div class="md-color__label__value">
+                  #4E342E
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #3E2723">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  900
+                </div>
+                <div class="md-color__label__value">
+                  #3E2723
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="color-pallete color-pallete--empty"></div>
+        <div class="color-pallete">
+          <ul>
+            <li class="md-color md-color--title" style="background: #9E9E9E">
+              <div class="md-color__name">
+                grey
+              </div>
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  500
+                </div>
+                <div class="md-color__label__value">
+                  #9E9E9E
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #FAFAFA">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  50
+                </div>
+                <div class="md-color__label__value">
+                  #FAFAFA
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #F5F5F5">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  100
+                </div>
+                <div class="md-color__label__value">
+                  #F5F5F5
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #EEEEEE">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  200
+                </div>
+                <div class="md-color__label__value">
+                  #EEEEEE
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #E0E0E0">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  300
+                </div>
+                <div class="md-color__label__value">
+                  #E0E0E0
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #BDBDBD">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  400
+                </div>
+                <div class="md-color__label__value">
+                  #BDBDBD
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #9E9E9E">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  500
+                </div>
+                <div class="md-color__label__value">
+                  #9E9E9E
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #757575">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  600
+                </div>
+                <div class="md-color__label__value">
+                  #757575
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #616161">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  700
+                </div>
+                <div class="md-color__label__value">
+                  #616161
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #424242">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  800
+                </div>
+                <div class="md-color__label__value">
+                  #424242
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #212121">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  900
+                </div>
+                <div class="md-color__label__value">
+                  #212121
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="color-pallete color-pallete--empty"></div>
+        <div class="color-pallete">
+          <ul>
+            <li class="md-color md-color--title" style="background: #607D8B">
+              <div class="md-color__name">
+                blue-grey
+              </div>
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  500
+                </div>
+                <div class="md-color__label__value">
+                  #607D8B
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #ECEFF1">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  50
+                </div>
+                <div class="md-color__label__value">
+                  #ECEFF1
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #CFD8DC">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  100
+                </div>
+                <div class="md-color__label__value">
+                  #CFD8DC
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #B0BEC5">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  200
+                </div>
+                <div class="md-color__label__value">
+                  #B0BEC5
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #90A4AE">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  300
+                </div>
+                <div class="md-color__label__value">
+                  #90A4AE
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #78909C">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  400
+                </div>
+                <div class="md-color__label__value">
+                  #78909C
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #607D8B">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  500
+                </div>
+                <div class="md-color__label__value">
+                  #607D8B
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #546E7A">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  600
+                </div>
+                <div class="md-color__label__value">
+                  #546E7A
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #455A64">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  700
+                </div>
+                <div class="md-color__label__value">
+                  #455A64
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #37474F">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  800
+                </div>
+                <div class="md-color__label__value">
+                  #37474F
+                </div>
+              </div>
+            </li>
+            <li class="md-color" style="background: #263238">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  900
+                </div>
+                <div class="md-color__label__value">
+                  #263238
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+    </div>
+
+    <footer class="--constrain">
+      Made by a <a href="https://twitter.com/orangemugdev">Mug</a>
+    </footer>
+
+  </body>
+</html>
+
