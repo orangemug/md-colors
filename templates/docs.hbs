@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>md-colors</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="app.css">
+  </head>
+  <body>
+
+    <header>
+      <div class="--constrain">
+        <h1>md-colors</h1>
+        <p>
+          Material design colors as an npm module
+        </p>
+      </div>
+    </header>
+
+    <div class="readme">
+      <div class="--constrain">
+        <p>
+          See usage at <a href="https://github.com/orangemug/md-colors" >orangemug/md-colors</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="color-palletes --constrain">
+      {{#each colors}}
+        <div class="color-pallete color-pallete--empty"></div>
+        <div class="color-pallete">
+          <ul>
+            <li class="md-color md-color--title" style="background: {{lookup this 500}}">
+              <div class="md-color__name">
+                {{@key}}
+              </div>
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  500
+                </div>
+                <div class="md-color__label__value">
+                  {{lookup this 500}}
+                </div>
+              </div>
+            </li>
+          {{#each this}}
+            <li class="md-color" style="background: {{this}}">
+              <div class="md-color__label">
+                <div class="md-color__label__name">
+                  {{@key}}
+                </div>
+                <div class="md-color__label__value">
+                  {{this}}
+                </div>
+              </div>
+            </li>
+          {{/each}}
+          </ul>
+        </div>
+      {{/each}}
+    </div>
+
+    <footer class="--constrain">
+      Made by a <a href="https://twitter.com/orangemugdev">Mug</a>
+    </footer>
+
+
+    <!-- scripts -->
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
+

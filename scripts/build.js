@@ -21,6 +21,7 @@ function tmpl(inpath, obj, outpath) {
 Promise
   .all([
     tmpl(__dirname+"/../templates/scss.hbs", {colors: colors.obj}, __dirname+"/../index.scss"),
+    tmpl(__dirname+"/../templates/docs.hbs", {colors: colors.obj}, __dirname+"/../docs/index.html"),
     // tmpl(__dirname+"/../templates/less.hbs", {colors: colors.obj}, __dirname+"/../index.less")
   ])
   .then(function() {
