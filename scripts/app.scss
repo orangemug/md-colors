@@ -1,7 +1,38 @@
+@import '../index.scss';
+
+body {
+}
+
 .--constrain {
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.block {
+  background: linear-gradient(
+    90deg,
+    map-get($md-colors-red, 500),
+    map-get($md-colors-pink, 500),
+    map-get($md-colors-purple, 500),
+    map-get($md-colors-deep-purple, 500),
+    map-get($md-colors-indigo, 500),
+    map-get($md-colors-blue, 500),
+    map-get($md-colors-light-blue, 500),
+    map-get($md-colors-cyan, 500),
+    map-get($md-colors-teal, 500),
+    map-get($md-colors-green, 500),
+    map-get($md-colors-light-green, 500),
+    map-get($md-colors-lime, 500),
+    map-get($md-colors-yellow, 500),
+    map-get($md-colors-amber, 500),
+    map-get($md-colors-orange, 500),
+    map-get($md-colors-deep-orange, 500),
+    map-get($md-colors-brown, 500),
+    map-get($md-colors-grey, 500),
+    map-get($md-colors-blue-grey, 500)
+  );
+  height: 0.4em;
 }
 
 body {
