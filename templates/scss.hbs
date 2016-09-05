@@ -1,0 +1,13 @@
+{{#each colors}}
+$md-colors-{{@key}}: (
+{{#each this}}
+  {{@key}}: {{this}},
+{{/each}}
+);
+
+{{/each}}
+$md-colors: (
+{{#each colors}}
+  {{@key}}: $md-colors-{{@key}},
+{{/each}}
+);

@@ -1,0 +1,8 @@
+{
+  "name": "md-colors",
+  "version": "0.1.0",
+  "dependencies": {
+    "deep-freeze": "0.0.1",
+    "handlebars": "^4.0.5"
+  }
+}
