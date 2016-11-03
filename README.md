@@ -43,15 +43,6 @@ As a sass module
 }
 ```
 
-As a less module
-
-```less
-@import "./node_modules/md-colors"
-.button {
-  background-color: extract($md-colors-lime, 500);
-}
-```
-
 
 ## License
 [MIT](LICENSE)
