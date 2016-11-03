@@ -39,7 +39,7 @@ As a sass module
   // Either
   background: map-get($md-colors-lime, 500);
   // Or
-  background: md-color("lime", 500);
+  background: md-color(lime, 500);
 }
 ```
 
