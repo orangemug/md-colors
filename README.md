@@ -34,7 +34,7 @@ colors("deep-orange", 500);
 As a sass module
 
 ```scss
-@import "./node_modules/md-colors"
+@import './node_modules/md-colors'
 .button {
   // Either
   background: map-get($md-colors-lime, 500);
