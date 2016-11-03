@@ -331,8 +331,8 @@ $md-colors: (
   blue-grey: $md-colors-blue-grey,
 );
 
-@function md-color($color, $spectrum) {
-  $map: map-get($md-colors, $color);
-  $hex: map-get($map, $spectrum);
+@function md-color($pallete, $color) {
+  $map: map-get($md-colors, $pallete);
+  $hex: map-get($map, $color);
   @return $hex;
 }
