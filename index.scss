@@ -330,3 +330,9 @@ $md-colors: (
   grey: $md-colors-grey,
   blue-grey: $md-colors-blue-grey,
 );
+
+@function md-color($color, $spectrum) {
+  $map: map-get($md-colors, $color);
+  $hex: map-get($map, $spectrum);
+  @return $hex;
+}

@@ -12,6 +12,14 @@
   margin-left: auto;
   margin-right: auto; }
 
+svg path {
+  fill: blue !important;
+  filter: url(#dropshadow) !important; }
+
+footer:before {
+  content: "";
+  background: linear-gradient(90deg, #F44336, #E91E63, #9C27B0, #673AB7, #3F51B5, #2196F3, #03A9F4, #00BCD4, #009688, #4CAF50, #8BC34A, #CDDC39, #FFEB3B, #FFC107, #FF9800, #FF5722, #795548, #9E9E9E, #607D8B); }
+
 .block {
   background: linear-gradient(90deg, #F44336, #E91E63, #9C27B0, #673AB7, #3F51B5, #2196F3, #03A9F4, #00BCD4, #009688, #4CAF50, #8BC34A, #CDDC39, #FFEB3B, #FFC107, #FF9800, #FF5722, #795548, #9E9E9E, #607D8B);
   border-bottom: solid 2px #ddd;
@@ -105,7 +113,7 @@ footer {
       <div class="--constrain">
         <h1>md-colors</h1>
         <p>
-          Material design colors as an npm module
+        The <a href="https://material.google.com/style/color.html">Material design colors</a> as an npm module
         </p>
       </div>
     </header>

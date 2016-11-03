@@ -11,3 +11,9 @@ $md-colors: (
   {{@key}}: $md-colors-{{@key}},
 {{/each}}
 );
+
+@function md-color($color, $spectrum) {
+  $map: map-get($md-colors, $color);
+  $hex: map-get($map, $spectrum);
+  @return $hex;
+}

@@ -9,29 +9,61 @@ body {
   margin-right: auto;
 }
 
+svg path {
+  fill: blue !important;
+  filter: url(#dropshadow) !important;
+}
+
+footer:before {
+  content: "";
+  background: linear-gradient(
+    90deg,
+    md-color(red, 500),
+    md-color(pink, 500),
+    md-color(purple, 500),
+    md-color(deep-purple, 500),
+    md-color(indigo, 500),
+    md-color(blue, 500),
+    md-color(light-blue, 500),
+    md-color(cyan, 500),
+    md-color(teal, 500),
+    md-color(green, 500),
+    md-color(light-green, 500),
+    md-color(lime, 500),
+    md-color(yellow, 500),
+    md-color(amber, 500),
+    md-color(orange, 500),
+    md-color(deep-orange, 500),
+    md-color(brown, 500),
+    md-color(grey, 500),
+    md-color(blue-grey, 500)
+  );
+}
+
 .block {
   background: linear-gradient(
     90deg,
-    map-get($md-colors-red, 500),
-    map-get($md-colors-pink, 500),
-    map-get($md-colors-purple, 500),
-    map-get($md-colors-deep-purple, 500),
-    map-get($md-colors-indigo, 500),
-    map-get($md-colors-blue, 500),
-    map-get($md-colors-light-blue, 500),
-    map-get($md-colors-cyan, 500),
-    map-get($md-colors-teal, 500),
-    map-get($md-colors-green, 500),
-    map-get($md-colors-light-green, 500),
-    map-get($md-colors-lime, 500),
-    map-get($md-colors-yellow, 500),
-    map-get($md-colors-amber, 500),
-    map-get($md-colors-orange, 500),
-    map-get($md-colors-deep-orange, 500),
-    map-get($md-colors-brown, 500),
-    map-get($md-colors-grey, 500),
-    map-get($md-colors-blue-grey, 500)
+    md-color(red, 500),
+    md-color(pink, 500),
+    md-color(purple, 500),
+    md-color(deep-purple, 500),
+    md-color(indigo, 500),
+    md-color(blue, 500),
+    md-color(light-blue, 500),
+    md-color(cyan, 500),
+    md-color(teal, 500),
+    md-color(green, 500),
+    md-color(light-green, 500),
+    md-color(lime, 500),
+    md-color(yellow, 500),
+    md-color(amber, 500),
+    md-color(orange, 500),
+    md-color(deep-orange, 500),
+    md-color(brown, 500),
+    md-color(grey, 500),
+    md-color(blue-grey, 500)
   );
+  border-bottom: solid 2px #ddd;
   height: 0.4em;
 }
 
@@ -48,8 +80,6 @@ h1, h2, h3 {
 
 header {
   padding: 0.8em 1.6em;;
-  background: black;
-  color: white;
 }
 
 header h1 {
